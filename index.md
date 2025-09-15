@@ -16,14 +16,14 @@ hero:
       text: 下载
       link: https://dist.opanel.cn
     - theme: alt
-      text: 文档
-      link: /docs
+      text: Github
+      link: https://github.com/opanel-mc/opanel
 
 features:
   - title: 多平台
     details: 作为服务端插件 / 模组，OPanel支持多个主流服务端平台的多个Minecraft版本，包括Bukkit、Fabric、Forge和Neoforge。
     icon: 🌏
-    link: ""
+    link: /docs/versions
     linkText: 版本列表
   - title: 功能丰富
     details: 与服务端深度融合，支持功能包括存档管理、玩家管理、游戏规则编辑、后台终端、日志管理等等。
