@@ -33,6 +33,10 @@ Running delayed init tasks
 Done (10.979s)! For help, type "help"
 ```
 
+:::tip
+
 访问密钥稍后可以在面板的设置页面中进行更改。
+
+:::
 
 接下来，就可以打开浏览器，通过`localhost:3000`来访问你的服务器面板。该面板的端口号默认为`3000`，端口可以在OPanel的[配置文件](/docs/configuration)中进行手动修改。

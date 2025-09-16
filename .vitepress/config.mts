@@ -9,6 +9,7 @@ export default defineConfig({
     nav: [
       { text: '主页', link: '/' },
       { text: '文档', link: '/docs/quick-start' },
+      { text: '友链', link: '/links' },
       { text: '下载', link: 'https://dist.opanel.cn' },
     ],
 
