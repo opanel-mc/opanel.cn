@@ -3,6 +3,9 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "OPanel",
   description: "OPanel官方网站与文档",
+  head: [
+    ["link", { rel: "icon", href: "/static/favicon.png" }]
+  ],
   themeConfig: {
     logo: "/static/logo.svg",
 
