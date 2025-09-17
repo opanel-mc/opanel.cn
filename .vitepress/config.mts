@@ -26,6 +26,10 @@ export default defineConfig({
         link: "/docs/configuration"
       },
       {
+        text: "指令",
+        link: "/docs/commands"
+      },
+      {
         text: "平台与版本支持",
         link: "/docs/versions"
       },
