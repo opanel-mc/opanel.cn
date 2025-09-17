@@ -10,29 +10,13 @@ OPanel在游戏内注册了`/opanel`指令，指令格式如下：
 
 输入该指令，打印OPanel的关于信息，包括OPanel版本、官网、源码仓库等等。
 
-```
-===========================================
- OPanel - A Minecraft server management panel
-
-Version: 1.0.0
-Author: NriotHrreion
-Website: https://opanel.cn
-Source Code: https://github.com/opanel-mc/opanel
-License: MPL-2.0
-===========================================
-```
+<<< @/snippets/opanel-about.ansi
 
 ## `/opanel status`
 
 输入该指令，打印OPanel当前状态。
 
-```
-OPanel Status
-Version: 1.0.0
-Status: Running
-Port: 3000
-Jetty Version: 11.0.15
-```
+<<< @/snippets/opanel-status.ansi
 
 ## `/opanel start`
 

@@ -30,6 +30,10 @@ export default defineConfig({
         link: "/docs/commands"
       },
       {
+        text: "贡献指南",
+        link: "/docs/contributing"
+      },
+      {
         text: "平台与版本支持",
         link: "/docs/versions"
       },
