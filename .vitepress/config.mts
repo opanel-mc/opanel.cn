@@ -14,6 +14,7 @@ export default defineConfig({
       { text: '文档', link: '/docs/quick-start' },
       { text: '友链', link: '/links' },
       { text: '下载', link: 'https://dist.opanel.cn' },
+      { text: '捐助', link: 'https://afdian.com/a/opanel' },
     ],
 
     sidebar: [
