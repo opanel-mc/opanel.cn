@@ -14,7 +14,7 @@ hero:
       link: /docs/quick-start
     - theme: alt
       text: 下载
-      link: https://dist.opanel.cn
+      link: https://github.com/opanel-mc/opanel/releases
     - theme: alt
       text: Github
       link: https://github.com/opanel-mc/opanel
