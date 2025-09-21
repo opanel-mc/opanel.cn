@@ -6,7 +6,13 @@ OPanel本质上是一个插件 / 模组，因此安装OPanel实际上就是将OP
 
 你可以去OPanel源码仓库的[Github Releases](https://github.com/opanel-mc/opanel/releases)页面内进行下载，也可以选择去我们自己搭建的文件分发站点<https://dist.opanel.cn>进行下载。
 
-由于各个平台与版本特性各不相同，因此在一个OPanel版本的下载列表内通常包含针对不同版本的多个jar包。这些jar包的文件名格式为`opanel-<服务端>-<游戏版本>-build-<OPanel版本>.jar`，其中，“游戏版本”指的是该jar包所支持的**最低版本**。
+由于各个平台与版本特性各不相同，因此在一个OPanel版本的下载列表内通常包含针对不同版本的多个jar包。这些jar包的文件名格式为`opanel-<服务端>-<游戏版本>-build-<OPanel版本>.jar`。
+
+:::info
+
+jar包名称中的“游戏版本”指的是该jar包所支持的**最低版本**
+
+:::
 
 你可以在[平台与版本支持](/docs/versions)查看OPanel目前支持的服务端平台与游戏版本。
 
@@ -16,6 +22,12 @@ OPanel本质上是一个插件 / 模组，因此安装OPanel实际上就是将OP
 
 - Bukkit系服务端：`plugins`文件夹
 - Forge系、Fabric系服务端：`mods`文件夹
+
+:::warning 注意
+
+OPanel所支持的Fabric Loader版本最低为`0.16.14`
+
+:::
 
 ## 使用
 
