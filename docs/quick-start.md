@@ -4,7 +4,10 @@ OPanel本质上是一个插件 / 模组，因此安装OPanel实际上就是将OP
 
 ## 下载
 
-你可以去OPanel源码仓库的[Github Releases](https://github.com/opanel-mc/opanel/releases)页面内进行下载，也可以选择去我们自己搭建的文件分发站点<https://dist.opanel.cn>进行下载（目前文件分发站点还在建设中，暂不可用）。
+你可以通过下面的几种途径获取OPanel：
+- Github Releases：<https://github.com/opanel-mc/opanel/releases>
+- OPanel 资源站：<https://dist.opanel.cn> （建设中... 暂不可用）
+- 蓝奏云：<https://t-bu.cn/b01397kota> （密码：8888）
 
 由于各个平台与版本特性各不相同，因此在一个OPanel版本的下载列表内通常包含针对不同版本的多个jar包。这些jar包的文件名格式为`opanel-<服务端>-<游戏版本>-build-<OPanel版本>.jar`。
 
