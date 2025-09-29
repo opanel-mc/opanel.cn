@@ -10,7 +10,9 @@ jar包名称中的“游戏版本”指的是该jar包所支持的**最低版本
 
 :::
 
-:::warning
+:::warning 注意
+
+OPanel所支持的Fabric Loader版本最低为`0.16.14`
 
 OPanel的Bukkit 1.16.x版本需要java版本`>=14`方可正常运行
 
