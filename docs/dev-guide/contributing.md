@@ -97,6 +97,10 @@ npm install
 
 提前准备一个Forge / Neoforge / Bukkit的服务端用于测试，然后按照下面的指南来构建一个jar包，接着将要调试的jar包放进对应的`mods`或`plugins`文件夹。在重启服务器（Forge / Neoforge服务端）或执行`/reload`指令（Bukkit系服务端）后，最新的更改将会应用到你的测试服务器上。
 
+#### 适配新版本
+
+参见[适配指南](./adaptation.html)。
+
 ### 前端
 
 在`frontend`文件夹下执行命令
