@@ -17,32 +17,41 @@ export default defineConfig({
       { text: '捐助', link: 'https://afdian.com/a/opanel' },
     ],
 
-    sidebar: [
-      {
-        text: "快速开始",
-        link: "/docs/quick-start"
-      },
-      {
-        text: "配置文件",
-        link: "/docs/configuration"
-      },
-      {
-        text: "指令",
-        link: "/docs/commands"
-      },
-      {
-        text: "贡献指南",
-        link: "/docs/contributing"
-      },
-      {
-        text: "平台与版本支持",
-        link: "/docs/versions"
-      },
-      {
-        text: "开发组成员名单",
-        link: "/docs/dev-group"
+    sidebar: {
+      "/docs/": {
+        base: "/docs/",
+        items: [
+          {
+            text: "快速开始",
+            link: "quick-start"
+          },
+          {
+            text: "配置文件",
+            link: "configuration"
+          },
+          {
+            text: "指令",
+            link: "commands"
+          },
+          {
+            text: "平台与版本支持",
+            link: "versions"
+          },
+          {
+            text: "开发组成员名单",
+            link: "dev-group"
+          },
+          {
+            text: "开发指南",
+            base: "/docs/dev-guide/",
+            items: [
+              { text: "贡献指南", link: "contributing" },
+              { text: "适配指南", link: "adaptation" },
+            ]
+          },
+        ]
       }
-    ],
+    },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/opanel-mc/opanel' }

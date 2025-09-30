@@ -47,6 +47,14 @@ opanel
 
 然后，你还需要安装[Node.js](https://nodejs.org)和jdk。
 
+准备好开发环境后，即可在Github创建本仓库的fork，**创建fork时应注意取消勾选"Copy the `main` branch only"**，以便后续将代码提交至`dev`分支。
+
+接着，通过下面的命令clone仓库：
+
+```cmd
+git clone -b dev https://github.com/<your-username>/opanel.git
+```
+
 ## 安装依赖
 
 在clone完仓库后，需要下载所有依赖才能正确运行源码。
@@ -120,3 +128,13 @@ npm run build
 ```
 
 最终构建好的jar包将出现在`/build/libs`文件夹下。
+
+## 提交代码
+
+由于本仓库的开发分支不是主分支，因此在push代码时应手动注明`dev`分支。
+
+```cmd
+git push origin dev
+```
+
+若想将你的代码合并到OPanel官方仓库，可以通过Pull Request进行提交。
