@@ -116,6 +116,7 @@
     #d0976b 50%
   );
   --vp-home-hero-image-filter: blur(44px);
+  --vp-home-preview-border-color: #e2e2e2;
 }
 
 .dark {
@@ -130,6 +131,8 @@
     #c77e11 50%,
     #7f4c26 50%
   );
+
+  --vp-home-preview-border-color: #414141;
 }
 
 @media (min-width: 640px) {
@@ -141,6 +144,15 @@
 @media (min-width: 960px) {
   :root {
     --vp-home-hero-image-filter: blur(68px);
+  }
+}
+
+.preview-container {
+  margin-top: 60px;
+  img {
+    border: 1px var(--vp-home-preview-border-color) solid;
+    border-radius: 5px;
+    box-shadow: 0 10px 17px 2px rgba(0,0,0,.2);
   }
 }
 

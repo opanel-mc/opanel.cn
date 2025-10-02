@@ -35,3 +35,15 @@ features:
     linkText: 加入QQ群
 ---
 
+<script setup>
+import { useData } from "vitepress";
+
+const { isDark } = useData();
+</script>
+
+<div className="preview-container">
+
+<img v-if="isDark" src="/static/preview-dark.png" alt="preview-image"/>
+<img v-else src="/static/preview-light.png" alt="preview-image"/>
+
+</div>
