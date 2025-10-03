@@ -40,21 +40,17 @@ OPanel的Bukkit 1.16.x版本需要java版本`>=14`方可正常运行
 
 ### 首次启动
 
-首次启动OPanel时，系统会自动随机生成一个访问密钥，这个密钥可以在控制台中查看。比如，在下面的示例中，随机生成的访问密钥为`7Q62IhmR41UK`：
+首次启动OPanel时，系统会自动随机生成一个访问密钥，并将密钥存入`.opanel`文件夹下的`INITIAL_ACCESS_KEY.txt`文件中。访问密钥稍后可以在面板的设置页面中进行更改。
 
-```
-[OPanel] Web server is ready on port 3000
-[OPanel] Initial launching detected, a new access key is generated: 7Q62IhmR41UK
-Done preparing level "world1.20" (2.299s)
-Running delayed init tasks
-Done (10.979s)! For help, type "help"
-```
+:::warning 注意
 
-访问密钥稍后可以在面板的设置页面中进行更改。
+使用初始密码登录后，请务必妥善保管密钥，并将系统生成的`INITIAL_ACCESS_KEY.txt`文件删除，以减少安全隐患。
+
+:::
 
 :::tip
 
-如果错过了初始访问密码，可以通过以下两种方式重新生成初始密码：
+如果丢失了初始访问密码，可以通过以下两种方式重新生成初始密码：
 - 直接删除配置文件，并重启服务器
 - 编辑配置文件，将`accessKey`一项改为空字符串`""`
 
