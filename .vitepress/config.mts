@@ -13,7 +13,7 @@ export default defineConfig({
       { text: '主页', link: '/' },
       { text: '文档', link: '/docs/quick-start' },
       { text: '友链', link: '/links' },
-      { text: '下载', link: 'https://github.com/opanel-mc/opanel/releases' },
+      { text: '下载', link: 'https://dist.opanel.cn' },
       { text: '捐助', link: 'https://afdian.com/a/opanel' },
     ],
 
