@@ -175,3 +175,12 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+.links-container p {
+  a {
+    display: inline-block;
+    img {
+      width: 300px;
+    }
+  }
+}
+
