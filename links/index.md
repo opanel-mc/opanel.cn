@@ -4,8 +4,8 @@
 
 <div class="links-container">
 
-[![miaocloud](/static/miaocloud.png)](https://cloud.miaostars.com)
-[![rainyun](/static/rainyun.png)](https://rainyun.com)
-[![acmecloud](/static/acmecloud.png)](https://acmecloud.cn)
+[![miaocloud](/static/friends/miaocloud.png)](https://cloud.miaostars.com)
+[![rainyun](/static/friends/rainyun.png)](https://rainyun.com)
+[![chuqiyun](/static/friends/chuqiyun.png)](https://chuqiyun.com)
 
 </div>
