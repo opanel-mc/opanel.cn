@@ -40,7 +40,7 @@ OPanel的Bukkit 1.16.x版本需要java版本`>=14`方可正常运行
 
 ### 首次启动
 
-首次启动OPanel时，系统会自动随机生成一个访问密钥，并将密钥存入`.opanel`文件夹下的`INITIAL_ACCESS_KEY.txt`文件中。访问密钥稍后可以在面板的设置页面中进行更改。
+首次启动OPanel时，系统会自动随机生成一个访问密钥，并将密钥存入`opanel`文件夹下的`INITIAL_ACCESS_KEY.txt`文件中。访问密钥稍后可以在面板的设置页面中进行更改。
 
 :::warning 注意
 
