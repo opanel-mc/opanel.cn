@@ -14,6 +14,12 @@ OPanel的配置文件用于管理服务器面板全局的一些设置。
 
 |键名|类型|介绍|默认值|
 |---|:---:|---|:---:|
-|`accessKey`|`string`|面板访问密钥||
+|`accessKey`|`string`|面板访问密钥的哈希值||
 |`salt`|`string`|生成token时使用的盐|`"opanel"`|
 |`webServerPort`|`int`|面板端口|`3000`|
+
+:::warning 注意
+
+`accessKey`存储的是密钥的哈希值，而非密钥本身。若丢失密钥，请参照[快速开始](./quick-start.html#使用)中的说明进行密钥重置。
+
+:::
