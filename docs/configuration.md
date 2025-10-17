@@ -15,7 +15,7 @@ OPanel的配置文件用于管理服务器面板全局的一些设置。
 |键名|类型|介绍|默认值|
 |---|:---:|---|:---:|
 |`accessKey`|`string`|面板访问密钥的哈希值||
-|`salt`|`string`|生成token时使用的盐|`"opanel"`|
+|`salt`|`string`|生成token时使用的盐||
 |`webServerPort`|`int`|面板端口|`3000`|
 
 :::warning 注意
