@@ -38,7 +38,7 @@ export default defineConfig({
             link: "versions"
           },
           {
-            text: "开发组成员名单",
+            text: "项目组成员名单",
             link: "dev-group"
           },
           {

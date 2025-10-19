@@ -16,8 +16,8 @@ hero:
       text: 下载
       link: https://dist.opanel.cn
     - theme: alt
-      text: Github
-      link: https://github.com/opanel-mc/opanel
+      text: 捐助
+      link: https://afdian.com/a/opanel
 
 features:
   - title: 多平台
@@ -29,7 +29,7 @@ features:
     details: 与服务端深度融合，支持功能包括存档管理、玩家管理、游戏规则编辑、后台终端、日志管理等等。
     icon: 🛠️
   - title: 社区活跃
-    details: 项目开发组人员长期活跃，用户可以在Github与QQ群中提问或反馈，项目开发组将尽力解答和解决问题。
+    details: 项目组人员长期活跃，用户可以在Github与QQ群中提问或反馈，项目开发组将尽力解答和解决问题。
     icon: 🤗
     link: https://qm.qq.com/q/1t1VHv1eHa
     linkText: 加入QQ群
