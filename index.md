@@ -17,7 +17,7 @@ hero:
       link: https://dist.opanel.cn
     - theme: alt
       text: 捐助
-      link: https://afdian.com/a/opanel
+      link: https://nocp.space/donate
 
 features:
   - title: 多平台
