@@ -7,6 +7,7 @@ OPanel本质上是一个插件 / 模组，因此安装OPanel实际上就是将OP
 你可以通过下面的几种途径获取OPanel：
 - Github Releases：<https://github.com/opanel-mc/opanel/releases>
 - OPanel 资源库：<https://dist.opanel.cn>
+- Curseforge：<https://curseforge.com/minecraft/bukkit-plugins/opanel>
 
 由于各个平台与版本特性各不相同，因此在一个OPanel版本的下载列表内通常包含针对不同版本的多个jar包。这些jar包的文件名格式为`opanel-<服务端>-<游戏版本>-build-<OPanel版本>.jar`。
 
