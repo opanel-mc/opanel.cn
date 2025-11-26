@@ -7,3 +7,4 @@
 |**xiaoyangcc**|开发|[Github](https://github.com/xiaoyangcc159)|
 |**SeaMite**|开发|[Github](https://github.com/SeaMite43981045) [个人主页](https://smite.work)|
 |**Deed**|测试 / Logo设计|[Github](https://github.com/henlowornd) [个人主页](https://henlo.cc)|
+|**nikita**|翻译|[Github](https://github.com/7884857)|
