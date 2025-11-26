@@ -1,20 +1,20 @@
-# 平台与版本支持
+# Platform and Version Support
 
-下面用`√`标出的版本是经过适配和测试，且可用的版本。
+The versions marked below with `√` are adapted, tested and available.
 
-> 此处的`Bukkit`平台指广义上的Bukkit服务端，包括Paper、Spigot、Craftbukkit等服务端
+> The `Bukkit` platform here refers to the Bukkit servers in a broad sense, including Paper, Spigot, Craftbukkit and etc.
 
 :::info
 
-jar包名称中的“游戏版本”指的是该jar包所支持的**最低版本**
+The 'game version' in the jar package name refers to the **minimum version** supported by the jar package.
 
 :::
 
-:::warning 注意
+:::warning 
 
-OPanel所支持的Fabric Loader版本最低为`0.16.14`
+The minimum Fabric Loader version supported by OPanel is `0.16.14`.
 
-OPanel的Bukkit 1.16.x版本需要java版本`>=14`方可正常运行
+The Bukkit 1.16.x version of OPanel requires Java version `>=14` to run properly.
 
 :::
 
