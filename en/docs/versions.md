@@ -10,9 +10,11 @@ The 'game version' in the jar package name refers to the **minimum version** sup
 
 :::
 
-:::warning 
+:::warning
 
 The minimum Fabric Loader version supported by OPanel is `0.16.14`.
+
+The minimum Neoforge version supported by OPanel is `21.1.217`.
 
 The Bukkit 1.16.x version of OPanel requires Java version `>=14` to run properly.
 
@@ -20,16 +22,17 @@ The Bukkit 1.16.x version of OPanel requires Java version `>=14` to run properly
 
 |       |Bukkit|Fabric|Forge|Neoforge|Folia|
 |-------|:----:|:----:|:---:|:------:|:---:|
+|1.21.11|√     |√     |√    |        |     |
 |1.21.10|√     |√     |√    |        |     |
 |1.21.9 |√     |√     |√    |        |     |
-|1.21.8 |√     |√     |√    |√       |√    |
-|1.21.7 |√     |√     |√    |√       |√    |
-|1.21.6 |√     |√     |√    |√       |√    |
-|1.21.5 |√     |√     |√    |√       |√    |
+|1.21.8 |√     |√     |√    |        |√    |
+|1.21.7 |√     |√     |√    |        |√    |
+|1.21.6 |√     |√     |√    |        |√    |
+|1.21.5 |√     |√     |√    |        |√    |
 |1.21.4 |√     |√     |√    |        |√    |
 |1.21.3 |√     |√     |√    |        |√    |
 |1.21.2 |√     |√     |     |        |√    |
-|1.21.1 |√     |√     |√    |        |√    |
+|1.21.1 |√     |√     |√    |√       |√    |
 |1.21   |√     |√     |√    |        |√    |
 |1.20.6 |√     |√     |√    |        |√    |
 |1.20.5 |√     |√     |     |        |√    |
