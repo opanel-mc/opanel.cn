@@ -47,12 +47,12 @@ Before getting started, you need to install [VSCode](https://code.visualstudio.c
 
 Then, you also need to install [Node.js](https://nodejs.org) and jdk.
 
-After preparing the development environment, you can create a fork of this repository on GitHub. **When creating the fork, make sure to uncheck 'Copy the `main` branch only'** so that you can later submit code to the `dev` branch.
+After preparing the development environment, you can create a fork of this repository on GitHub.
 
 Next, clone the repository using the following command:
 
 ```cmd
-git clone -b dev https://github.com/<your-username>/opanel.git
+git clone https://github.com/<your-username>/opanel.git
 ```
 
 ## Install dependencies
@@ -135,10 +135,10 @@ The final built jar file will appear in the `/build/libs` folder.
 
 ## Commit your code
 
-Since the dev branch of this repository is not the main branch, you should manually specify the `dev` branch when pushing your code.
-
 ```cmd
-git push origin dev
+git add .
+git commit -m "<your-commit-message>"
+git push
 ```
 
 If you want to merge your code into the official OPanel repository, you can submit it through a Pull Request.
