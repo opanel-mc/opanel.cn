@@ -34,6 +34,10 @@ export default defineConfig({
             link: "commands"
           },
           {
+            text: "常见问题",
+            link: "faq"
+          },
+          {
             text: "平台与版本支持",
             link: "versions"
           },
@@ -58,7 +62,7 @@ export default defineConfig({
     ],
 
     footer: {
-      copyright: "Copyright © 2025 OPanel Project",
+      copyright: "Copyright © 2026 OPanel Project",
       message: "Released under the MPL-2.0 License"
     },
 
@@ -125,6 +129,10 @@ export default defineConfig({
               {
                 text: "Commands",
                 link: "commands"
+              },
+              {
+                text: "FAQ",
+                link: "faq"
               },
               {
                 text: "Platform and Version Support",

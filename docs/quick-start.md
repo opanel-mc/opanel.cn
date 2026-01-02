@@ -40,28 +40,36 @@ OPanel的Bukkit 1.16.x版本需要java版本`>=14`方可正常运行
 
 ### 首次启动
 
-首次启动OPanel时，系统会自动随机生成一个访问密钥，并将密钥存入`opanel`文件夹下的`INITIAL_ACCESS_KEY.txt`文件中。访问密钥稍后可以在面板的设置页面中进行更改。
+首次启动OPanel时，OPanel会在控制台中打印：
+
+```
+===========================OPanel===========================
+Initial launching detected,
+Check opanel/INITIAL_ACCESS_KEY.txt for the initial access key.
+Remember to delete the file for your server security.
+============================================================
+```
+
+此时，系统自动随机生成了一个访问密钥，你可以在`opanel`文件夹中的`INITIAL_ACCESS_KEY.txt`文件找到这个访问密钥。
+
+![quick-start-1](/static/docs/quick-start-1.png)
+
+![quick-start-2](/static/docs/quick-start-2.png)
+
+![quick-start-3](/static/docs/quick-start-3.png)
 
 :::info
 
 使用初始密码登录后，请务必妥善保管密钥，并将系统生成的`INITIAL_ACCESS_KEY.txt`文件删除，以减少安全隐患。
 
-系统会在第二次启动服务器时自动删除初始密钥文件，若丢失密钥，请根据下面的提示进行重置。
-
-:::
-
-:::tip
-
-如果丢失了初始访问密钥，可以通过以下两种方式重新生成初始密码：
-- 直接删除配置文件，并重启服务器
-- 编辑配置文件，将`accessKey`一项改为空字符串`""`
-
 :::
 
 接下来，就可以打开浏览器，通过`http://<服务器的公网IP>:3000`来访问你的服务器面板。该面板的端口号默认为`3000`，端口可以在OPanel的[配置文件](/docs/configuration)中进行手动修改。
 
+登录面板后，可以在设置中修改访问密钥。
+
 :::warning 注意
 
-云服务商一般会为服务器的端口设置防火墙来提高安全性，若你正在使用云服务器部署Minecraft服务器，那么**请设置防火墙，放行OPanel所使用的端口**，否则将导致无法访问OPanel。
+云服务商一般会为服务器的端口设置防火墙来提高安全性。若你正在使用云服务器部署Minecraft服务器，那么请设置防火墙和端口映射，放行和转发OPanel所使用的端口。设置完成之后，请使用 **云服务商提供的公网IP地址** + **转发后的OPanel端口号** 来访问OPanel。
 
 :::

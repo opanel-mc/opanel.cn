@@ -42,28 +42,36 @@ After the installation, you can start using OPanel in your browser.
 
 ### First launch
 
-When starting OPanel for the first time, the system will automatically generate a random access key and save it in the `INITIAL_ACCESS_KEY.txt` file under the `opanel` folder. The access key can be changed later on the panel's settings page.
+On the first launch, OPanel will print the following info in the console:
+
+```
+===========================OPanel===========================
+Initial launching detected,
+Check opanel/INITIAL_ACCESS_KEY.txt for the initial access key.
+Remember to delete the file for your server security.
+============================================================
+```
+
+At this time, the system generated a random access key automatically. You can find the access key in the `INITIAL_ACCESS_KEY.txt` under the `opanel` folder.
+
+![quick-start-1](/static/docs/quick-start-1.png)
+
+![quick-start-2](/static/docs/quick-start-2.png)
+
+![quick-start-3](/static/docs/quick-start-3.png)
 
 :::info
 
 After logging in with the initial password, be sure to properly safeguard the key and delete the system-generated `INITIAL_ACCESS_KEY.txt` file to reduce security risks.
 
-The system will automatically delete the initial key file after your first restarting. If the key is lost, please follow the instructions below to reset it.
-
 :::
 
-:::tip
+Next, you can open your browser and access your server panel via `http://<your_server_public_IP>:3000`. The default port of this panel is `3000`, and the port can be manually modified in OPanel's [configuration file](/en/docs/configuration).
 
-If the initial access key is lost, the initial password can be regenerated in the following two ways:
-- Directly delete the configuration file and restart the server
-- Edit the configuration file and set the `accessKey` field to an empty string `""`
-
-:::
-
-Next, you can open your browser and access your server panel via `http://<your_server_public_IP>:3000`. The default port of this panel is `3000`, and the port can be manually modified in OPanel's [configuration file](/docs/configuration).
+You can change your access key in the settings after logging in to the panel.
 
 :::warning
 
-Cloud server providers generally set up firewalls for server ports to enhance security. If you are using a cloud server to run a Minecraft server, **please configure the firewall to allow the ports used by OPanel**, otherwise you will not be able to access OPanel.
+Cloud server providers generally set up firewalls for server ports to enhance security. If you are using a cloud server to run a Minecraft server, please configure the firewall and port mappings to allow and forward the port that OPanel is running on. Then, please use **the public IP address provided by the cloud server provider** + **the forwarded port used by OPanel** to get access to OPanel.
 
 :::
