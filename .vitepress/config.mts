@@ -47,6 +47,10 @@ export default defineConfig({
                 text: "项目组成员",
                 link: "project-members"
               },
+              {
+                text: "捐助说明",
+                link: "donation"
+              },
             ]
           },
           {
@@ -147,6 +151,10 @@ export default defineConfig({
                   {
                     text: "Project Members",
                     link: "project-members"
+                  },
+                  {
+                    text: "Donation",
+                    link: "donation"
                   },
                 ]
               },

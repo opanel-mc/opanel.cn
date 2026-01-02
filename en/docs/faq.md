@@ -40,11 +40,11 @@ Because the functional positioning of OPanel is a web panel for a **single** ser
 
 ## 6. How to support OPanel / make contribution to OPanel?
 
-### Common users
+### Common Users
 
 You can support us via [donation](https://nocp.space/donate).
 
-### Cloud server providers
+### Cloud Server Providers
 
 You can support us via [donation](https://nocp.space/donate) or becoming a partner with us.
 
