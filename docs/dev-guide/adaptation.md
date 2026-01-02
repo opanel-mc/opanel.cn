@@ -6,7 +6,7 @@ outline: "deep"
 
 如果你想为OPanel适配新的游戏版本，那么请仔细阅读本文。
 
-## 准备工作
+## 开始之前
 
 请按照[贡献指南](./contributing.html)中的步骤fork仓库、下载源码、安装依赖，之后方可进行适配开发。
 
@@ -85,7 +85,6 @@ fabric_api_version=0.97.3
 下面是不同服务端查询版本信息的方式：
 - Fabric：<https://fabricmc.net/develop/>
 - Forge：<https://files.minecraftforge.net/net/minecraftforge/forge/>
-- Neoforge：<https://github.com/NeoForgeMDKs>
 
 :::
 

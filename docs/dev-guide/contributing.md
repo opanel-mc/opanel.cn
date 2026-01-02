@@ -31,6 +31,9 @@ opanel
 
 - `frontend` 文件夹存放前端页面源码，前端使用[Next.js](https://nextjs.org)和[Shadcn UI](https://ui.shadcn.com)进行构建。
 - `core` 文件夹是整个项目的核心，包括一系列核心逻辑和功能，如Web服务器和后端API。
+- `fabric-helper` 文件夹存放Fabric服务端适配模块的共用代码。
+- `forge-helper` 文件夹存放Forge服务端（不包括Neoforge）适配模块的共用代码。
+- `bukkit-helper` 文件夹存放Bukkit系列服务端适配模块的共用代码。
 - 以 `fabric-` 开头的文件夹是不同Minecraft版本的Fabric模组实现。
 - 以 `forge-` 开头的文件夹是不同Minecraft版本的Forge模组实现。
 - 以 `neoforge-` 开头的文件夹是不同Minecraft版本的Neoforge模组实现。
@@ -83,19 +86,7 @@ npm install
 
 ### 服务端功能 / 后端API
 
-#### Fabric
-
-执行Gradle菜单中相应Minecraft版本的Fabric任务`fabric/runServer`。在服务器完全启动后，后端API和生产环境下的前端页面将被部署在`3000`端口上。
-
-:::info
-
-通常情况下，我们不会使用这里生产环境下的前端页面来开发和调试前端。
-
-:::
-
-#### Forge / Neoforge / Bukkit
-
-提前准备一个Forge / Neoforge / Bukkit的服务端用于测试，然后按照下面的指南来构建一个jar包，接着将要调试的jar包放进对应的`mods`或`plugins`文件夹。在重启服务器（Forge / Neoforge服务端）或执行`/reload`指令（Bukkit系服务端）后，最新的更改将会应用到你的测试服务器上。
+提前准备一个Fabric / Forge / Neoforge / Bukkit的服务端用于测试，然后按照下面的指南来构建一个jar包，接着将要调试的jar包放进对应的`mods`或`plugins`文件夹。在重启服务器后，最新的更改将会应用到你的测试服务器上。
 
 #### 适配新版本
 

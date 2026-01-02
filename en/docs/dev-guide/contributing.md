@@ -31,6 +31,9 @@ opanel
 
 - The `frontend` folder contains the source code for the frontend pages. The frontend is built using [Next.js](https://nextjs.org) and [Shadcn UI](https://ui.shadcn.com).
 - The `core` folder is the core of the entire project, including a series of core logic and functionalities, such as the web server and backend APIs.
+- `fabric-helper` folder contains the shared code of Fabric implementation modules.
+- `forge-helper` folder contains the shared code of Forge (not including Neoforge) implementation modules.
+- `bukkit-helper` folder contains the shared code of Bukkit series implementation modules.
 - Folders starting with `fabric-` are Fabric implementations for different Minecraft versions.
 - Folders starting with `forge-` are Forge implementations for different Minecraft versions.
 - Folders starting with `neoforge-` are Neoforge implementations for different Minecraft versions.
@@ -83,23 +86,11 @@ npm install
 
 ### Server-side functionality / Backend API
 
-#### Fabric
-
-Execute the Fabric task `fabric/runServer` for the corresponding Minecraft version in the Gradle menu. After the server has fully started, the backend API and the frontend pages in the production environment will be deployed on port `3000`.
-
-:::info
-
-Execute the Fabric task `fabric/runServer` for the corresponding Minecraft version in the 
-
-:::
-
-#### Forge / Neoforge / Bukkit
-
-Prepare a Forge / Neoforge / Bukkit server in advance for testing, then follow the guide below to build a jar file. Next, place the jar file you want to debug into the corresponding `mods` or `plugins` folder. After restarting the server (Forge / Neoforge server) or executing the `/reload` command (Bukkit-based server), the latest changes will be applied to your test server.
+Prepare a Fabric / Forge / Neoforge / Bukkit server in advance for testing, then follow the guide below to build a jar file. Next, place the jar file you want to debug into the corresponding `mods` or `plugins` folder. After restarting the server, the latest changes will be applied to your test server.
 
 #### Adapt the new version
 
-See [Adaptation Guide](./adaptation.html)。
+See [Adaptation Guidelines](./adaptation.html)。
 
 ### Frontend
 

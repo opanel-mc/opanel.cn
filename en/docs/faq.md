@@ -50,6 +50,6 @@ You can support us via [donation](https://nocp.space/donate) or becoming a partn
 
 ### Developers
 
-Refer to [Contributing Guidelines](/docs/dev-guide/contributing) and [Adaptation Guide](/docs/dev-guide/adaptation), contribute your code to OPanel.
+Refer to [Contributing Guidelines](/docs/dev-guide/contributing) and [Adaptation Guidelines](/docs/dev-guide/adaptation), contribute your code to OPanel.
 
-If you're willing to join OPanel Project, please send email to <nriot233@gmail.com>.
+If you're willing to join OPanel Project, please send an email to <nriot233@gmail.com>, along with some relevant information.

@@ -38,12 +38,16 @@ export default defineConfig({
             link: "faq"
           },
           {
-            text: "平台与版本支持",
-            link: "versions"
-          },
-          {
-            text: "项目组成员名单",
-            link: "dev-group"
+            items: [
+              {
+                text: "平台与版本支持",
+                link: "versions"
+              },
+              {
+                text: "项目组成员",
+                link: "project-members"
+              },
+            ]
           },
           {
             text: "开发指南",
@@ -135,15 +139,19 @@ export default defineConfig({
                 link: "faq"
               },
               {
-                text: "Platform and Version Support",
-                link: "versions"
+                items: [
+                  {
+                    text: "Platform and Version Support",
+                    link: "versions"
+                  },
+                  {
+                    text: "Project Members",
+                    link: "project-members"
+                  },
+                ]
               },
               {
-                text: "Dev Group Members",
-                link: "dev-group"
-              },
-              {
-                text: "Development Guidelines",
+                text: "Development",
                 base: "/en/docs/dev-guide/",
                 items: [
                   { text: "Contributing Guidelines", link: "contributing" },

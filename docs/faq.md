@@ -52,4 +52,4 @@
 
 参考[贡献指南](/docs/dev-guide/contributing)和[适配指南](/docs/dev-guide/adaptation)，为本项目贡献代码。
 
-如有意向加入OPanel项目组，请发送邮件至<nriot233@gmail.com>。
+如有意向加入OPanel项目组，请发送邮件至<nriot233@gmail.com>，并附上相关信息。
