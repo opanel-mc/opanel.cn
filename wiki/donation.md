@@ -1,3 +1,7 @@
+---
+outline: "deep"
+---
+
 # 捐助说明
 
 OPanel是一个非盈利性质的开源项目，但出于项目开发和维护的需要，我们开放捐助入口。
@@ -28,4 +32,4 @@ OPanel是一个非盈利性质的开源项目，但出于项目开发和维护�
 
 ### 合作
 
-如果你们与OPanel达成了合作关系，那么可以在[友链](/links/)页面添加一个友情链接。
+如果你们与OPanel达成了合作关系，那么可以在[友链](/links/)页面和Github仓库[README](https://github.com/opanel-mc/opanel/blob/main/README.md)中添加一个友情链接，并获得在OPanel交流群内进行适当广告的权利。

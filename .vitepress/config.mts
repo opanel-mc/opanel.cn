@@ -13,6 +13,7 @@ export default defineConfig({
       { text: "主页", link: "/" },
       { text: "文档", link: "/docs/quick-start" },
       { text: "友链", link: "/links" },
+      { text: "Wiki", link: "/wiki" },
       { text: "下载", link: "https://dist.opanel.cn" },
       { text: "捐助", link: "https://nocp.space/donate" },
     ],
@@ -47,10 +48,6 @@ export default defineConfig({
                 text: "项目组成员",
                 link: "project-members"
               },
-              {
-                text: "捐助说明",
-                link: "donation"
-              },
             ]
           },
           {
@@ -61,6 +58,14 @@ export default defineConfig({
               { text: "适配指南", link: "adaptation" },
             ]
           },
+        ]
+      },
+      "/wiki/": {
+        base: "/wiki/",
+        items: [
+          { text: "捐助说明", link: "donation" },
+          { text: "项目组管理手册", link: "admin-handbook" },
+          { text: "项目迭代流程", link: "iteration" },
         ]
       }
     },
@@ -151,10 +156,6 @@ export default defineConfig({
                   {
                     text: "Project Members",
                     link: "project-members"
-                  },
-                  {
-                    text: "Donation",
-                    link: "donation"
                   },
                 ]
               },
