@@ -38,7 +38,17 @@
 
 由于OPanel的功能定位是以插件 / 模组形式装载、针对**单个**服务端的网页管理面板，我们并不计划支持如Bungeecord、Velocity之类的多服务端反向代理软件。
 
-## 6. 如何支持OPanel / 为OPanel做出贡献？
+## 6. 使用安卓手机+Termux搭建服务器时，无法打开OPanel仪表盘？
+
+这可能是因为OPanel使用的oshi库找不到JNA而无法正常工作。首先，你需要从网上下载与你设备架构匹配的`libjnidispatch.so`文件，然后在服务端文件夹下新建一个`jni-libs`文件夹，将你下载的so文件放入这个文件夹。
+
+在启动Minecraft服务器的时候，加上下面的参数：
+
+```
+-Djna.boot.library.path=./jni-libs
+```
+
+## 7. 如何支持OPanel / 为OPanel做出贡献？
 
 ### 普通用户
 

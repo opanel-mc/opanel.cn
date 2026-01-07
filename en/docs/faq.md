@@ -38,7 +38,17 @@ There are a lot of people playing 1.21.1, so we just prioritize supporting Neofo
 
 Because the functional positioning of OPanel is a web panel for a **single** server, loaded as a plugin / mod, we don't have any plan for supporting the multi-server reverse proxy software such as Bungeecord and Velocity.
 
-## 6. How to support OPanel / make contribution to OPanel?
+## 6. On a server deployed with Android+Termux, cannot open OPanel dashboard?
+
+This is probably because the oshi library used by OPanel cannot find JNA and thus not working. First, you need to download a `libjnidispatch.so` file that matches your device arch, and create a folder named `jni-libs` under your server folder, then drag the so file into the folder.
+
+Add the following arguments when starting your Minecraft server:
+
+```
+-Djna.boot.library.path=./jni-libs
+```
+
+## 7. How to support OPanel / make contribution to OPanel?
 
 ### Common Users
 
