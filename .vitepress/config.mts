@@ -51,6 +51,15 @@ export default defineConfig({
             ]
           },
           {
+            text: "其他",
+            items: [
+              {
+                text: "在简幻欢中使用OPanel",
+                link: "simpfun"
+              }
+            ]
+          },
+          {
             text: "开发指南",
             base: "/docs/dev-guide/",
             items: [
