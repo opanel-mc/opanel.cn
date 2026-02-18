@@ -2,4 +2,4 @@
 [90mVersion: [0m1.0.0rc8
 [90mStatus: [32mRunning
 [90mPort: [0m3000
-[90mJetty Version: [0m11.0.15
+[90mJavalin Version: [0m11.0.15
