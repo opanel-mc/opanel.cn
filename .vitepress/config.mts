@@ -35,6 +35,10 @@ export default defineConfig({
             link: "commands"
           },
           {
+            text: "MCP",
+            link: "mcp"
+          },
+          {
             text: "常见问题",
             link: "faq"
           },
@@ -151,6 +155,10 @@ export default defineConfig({
               {
                 text: "Commands",
                 link: "commands"
+              },
+              {
+                text: "MCP",
+                link: "mcp"
               },
               {
                 text: "FAQ",
