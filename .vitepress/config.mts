@@ -58,6 +58,10 @@ export default defineConfig({
             text: "其他",
             items: [
               {
+                text: "在雨云游戏云面板中使用OPanel",
+                link: "rainyun"
+              },
+              {
                 text: "在简幻欢中使用OPanel",
                 link: "simpfun"
               }
