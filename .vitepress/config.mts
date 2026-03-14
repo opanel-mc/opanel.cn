@@ -35,12 +35,21 @@ export default defineConfig({
             link: "commands"
           },
           {
-            text: "MCP",
-            link: "mcp"
-          },
-          {
             text: "常见问题",
             link: "faq"
+          },
+          {
+            text: "配置",
+            items: [
+              {
+                text: "服务器重启配置",
+                link: "restart-server"
+              },
+              {
+                text: "MCP",
+                link: "mcp"
+              },
+            ]
           },
           {
             items: [
@@ -161,12 +170,21 @@ export default defineConfig({
                 link: "commands"
               },
               {
-                text: "MCP",
-                link: "mcp"
-              },
-              {
                 text: "FAQ",
                 link: "faq"
+              },
+              {
+                text: "References",
+                items: [
+                  {
+                    text: "Server Restart Configuration",
+                    link: "restart-server"
+                  },
+                  {
+                    text: "MCP",
+                    link: "mcp"
+                  },
+                ]
               },
               {
                 items: [
