@@ -49,10 +49,14 @@
   --opanel-theme-3: #c0753c;
   --opanel-theme-soft: #f3e4d0;
 
+  --vp-c-bg: var(--vp-c-white);
+  --vp-c-bg-soft: #f4f4f4;
+  --vp-c-bg-alt: #f4f4f4;
+
   --vp-c-default-1: var(--vp-c-gray-1);
   --vp-c-default-2: var(--vp-c-gray-2);
   --vp-c-default-3: var(--vp-c-gray-3);
-  --vp-c-default-soft: var(--vp-c-gray-soft);
+  --vp-c-default-soft: #a5a5a529;
 
   --vp-c-brand-1: var(--opanel-theme-1);
   --vp-c-brand-2: var(--opanel-theme-2);
@@ -80,6 +84,29 @@
   --opanel-theme-2: #f89d13;
   --opanel-theme-3: #df921e;
   --opanel-theme-soft: #482b12;
+
+  --vp-c-bg: var(--vp-c-black);
+  --vp-c-bg-soft: #141414;
+  --vp-c-bg-alt: #141414;
+
+  --vp-c-default-soft: #bcbcbc29;
+}
+
+/**
+ * Component: Nav
+ * -------------------------------------------------------------------------- */
+:root {
+  --vp-nav-bg-color: #ffffffbd;
+  .VPNavBar {
+    backdrop-filter: blur(10px);
+  }
+}
+
+.dark {
+  --vp-nav-bg-color: #0c0c0cbd;
+  .VPNavBar {
+    backdrop-filter: blur(10px);
+  }
 }
 
 /**
