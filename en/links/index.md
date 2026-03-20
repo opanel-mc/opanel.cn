@@ -1,5 +1,9 @@
 # Friendship Links
 
+## OPanel Links
+
+<!--@include: @/data/opanel-links.md-->
+
 ## Cloud Server Providers
 
 Thanks to the following cloud server providers for their support of this project!
