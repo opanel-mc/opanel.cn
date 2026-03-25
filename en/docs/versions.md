@@ -12,7 +12,7 @@ The 'game version' in the jar package name refers to the **minimum version** sup
 
 :::warning
 
-The minimum Fabric Loader version supported by OPanel is `0.16.14`.
+The minimum Fabric Loader version supported by OPanel is `0.16.14` (`0.17.3` for Minecraft versions `1.21.11` and above).
 
 The minimum Neoforge version supported by OPanel is `21.1.217`.
 
