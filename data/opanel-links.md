@@ -2,3 +2,4 @@
 - Curseforge: <https://curseforge.com/minecraft/bukkit-plugins/opanel>
 - SpigotMC: <https://spigotmc.org/resources/opanel.133219>
 - MCMod: <https://mcmod.cn/class/25408.html>
+- NexusMC: <https://nexusmc.cn/resources/4feb60bf-d812-44dc-9930-2ed4bcfde645>
