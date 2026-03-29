@@ -17,9 +17,11 @@ OPanel的配置文件用于管理服务器面板全局的一些设置。
 |`accessKey`|`string`|面板访问密钥的哈希值||
 |`salt`|`string`|生成token时使用的盐||
 |`webServerPort`|`int`|面板端口|`3000`|
+|`cookieSecure`|`boolean`|使用HTTPS加密传输Cookie|`false`|
 
 :::warning 注意
 
-`accessKey`存储的是密钥的哈希值，而非密钥本身。若丢失密钥，请参照[快速开始](./quick-start.html#使用)中的说明进行密钥重置。
+- `accessKey`存储的是密钥的哈希值，而非密钥本身。若丢失密钥，请参照[快速开始](./quick-start.html#使用)中的说明进行密钥重置。
+- `cookieSecure`需要额外配置SSL证书与反向代理才能实现HTTPS加密通信。
 
 :::

@@ -17,8 +17,11 @@ The location of the configuration file varies depending on the server. You can r
 |`accessKey`|`string`|Hash value of the panel access key||
 |`salt`|`string`|Salt used when generating tokens||
 |`webServerPort`|`int`|Web panel port|`3000`|
+|`cookieSecure`|`boolean`|Use HTTPS to encrypt Cookie transmission|`false`|
 
 :::warning 
 
-`accessKey` stores the hash of the key, not the key itself. If the key is lost, please refer to the instructions in [Quick Start](./quick-start.html#usage) for key reset.
+- `accessKey` stores the hash of the key, not the key itself. If the key is lost, please refer to the instructions in [Quick Start](./quick-start.html#usage) for key reset.
+- `cookieSecure` requires additional SSL certificate and reverse proxy configuration to enable HTTPS communication.
+
 :::
