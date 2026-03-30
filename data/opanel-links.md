@@ -4,3 +4,4 @@
 - MCMod: <https://mcmod.cn/class/25408.html>
 - NexusMC: <https://nexusmc.cn/resources/4feb60bf-d812-44dc-9930-2ed4bcfde645>
 - Paper Hangar: <https://hangar.papermc.io/OPanel-Project/OPanel>
+- bStats: <https://bstats.org/plugin/bukkit/OPanel/29765>
