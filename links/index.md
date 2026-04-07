@@ -13,3 +13,7 @@
 ## 赞助友链
 
 <!--@include: @/data/sponsor-links.md-->
+
+## 合作友链
+
+<!--@include: @/data/coop-links.md-->

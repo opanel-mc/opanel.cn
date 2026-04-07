@@ -13,3 +13,7 @@ Thanks to the following cloud server providers for their support of this project
 ## Sponsor Friend Links
 
 <!--@include: @/data/sponsor-links.md-->
+
+## Cooperation Links
+
+<!--@include: @/data/coop-links.md-->

@@ -1,0 +1,1 @@
+- DLC Manager: <https://modrinth.com/mod/dlc-manager>
