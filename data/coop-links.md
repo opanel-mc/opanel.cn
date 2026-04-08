@@ -1,1 +1,1 @@
-- DLC Manager: <https://modrinth.com/mod/dlc-manager>
+- DLC Manager: <https://curseforge.com/minecraft/mc-mods/dlc-manager>
