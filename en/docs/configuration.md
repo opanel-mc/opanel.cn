@@ -8,7 +8,7 @@ The location of the configuration file varies depending on the server. You can r
 
 - Bukkit servers: `/plugins/OPanel/config.yml`
 - Forge servers: `/config/opanel-common.toml`
-- Fabric servers: `/config/opanel.json`
+- Fabric servers: `/config/opanel.json` **(You must stop your Fabric server before modifying the configuration)**
 
 ## Configuration Options
 

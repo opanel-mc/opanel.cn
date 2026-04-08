@@ -14,6 +14,12 @@ If the initial access key is lost, the initial password can be regenerated in th
 - Directly delete the [configuration file](/en/docs/configuration) and restart the server
 - Edit the [configuration file](/en/docs/configuration) and set the `accessKey` field to an empty string `""`
 
+:::warning
+
+For Fabric servers, you **MUST** stop the server before deleting or editing the configuration file.
+
+:::
+
 ## 3. Why can't I access the panel?
 
 Cloud server providers generally set up firewalls for server ports to enhance security.
