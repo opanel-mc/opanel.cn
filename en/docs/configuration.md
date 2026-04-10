@@ -18,7 +18,7 @@ The location of the configuration file varies depending on the server. You can r
 |`salt`|`string`|Salt used when generating tokens||
 |`webServerPort`|`int`|Web panel port|`3000`|
 |`cookieSecure`|`boolean`|Use HTTPS to encrypt Cookie transmission|`false`|
-|`proxyHeaders`|`boolean`|Use proxy headers to get real IP| `false` |
+|`proxyHeaders`|`boolean`|Use proxy headers to get real IP|`false`|
 
 :::warning 
 
