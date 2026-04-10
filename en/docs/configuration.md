@@ -18,10 +18,12 @@ The location of the configuration file varies depending on the server. You can r
 |`salt`|`string`|Salt used when generating tokens||
 |`webServerPort`|`int`|Web panel port|`3000`|
 |`cookieSecure`|`boolean`|Use HTTPS to encrypt Cookie transmission|`false`|
+|`proxyHeaders`|`boolean`|Use proxy headers to get real IP| `false` |
 
 :::warning 
 
 - `accessKey` stores the hash of the key, not the key itself. If the key is lost, please refer to the instructions in [Quick Start](./quick-start.html#usage) for key reset.
 - `cookieSecure` requires additional SSL certificate and reverse proxy configuration to enable HTTPS communication.
+- If you are using a reverse proxy, set `proxyHeaders` to `true` to obtain the correct IP address.
 
 :::
