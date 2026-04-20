@@ -32,11 +32,11 @@ e.g. The public IP provided by the cloud server provider is `12.34.56.78`, and y
 
 :::
 
-## 4. Why not support other versions of Neoforge?
+## 4. Why not support other versions of NeoForge?
 
-Due to some issues of NeoGradle build tool (Please refer to [neoforged/NeoGradle#282](https://github.com/neoforged/NeoGradle/issues/282)), we can't support multiple incompatible versions of Neoforge.
+Due to some issues of NeoGradle build tool (Please refer to [neoforged/NeoGradle#282](https://github.com/neoforged/NeoGradle/issues/282)), we can't support multiple incompatible versions of NeoForge.
 
-There are a lot of people playing 1.21.1, so we just prioritize supporting Neoforge 1.21.1.
+There are a lot of people playing 1.21.1, so we just prioritize supporting NeoForge 1.21.1.
 
 ## 5. Would OPanel support multi-server in the future?
 

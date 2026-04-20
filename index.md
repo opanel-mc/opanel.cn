@@ -21,7 +21,7 @@ hero:
 
 features:
   - title: 多平台
-    details: 作为服务端插件 / 模组，OPanel支持多个主流服务端平台的多个Minecraft版本，包括Bukkit、Fabric、Forge和Neoforge。
+    details: 作为服务端插件 / 模组，OPanel支持多个主流服务端平台的多个Minecraft版本，包括Bukkit、Fabric、Forge和NeoForge。
     icon: 🌏
     link: /docs/versions
     linkText: 版本列表

@@ -32,11 +32,11 @@
 
 :::
 
-## 4. 为什么不支持其他版本的Neoforge服务端？
+## 4. 为什么不支持其他版本的NeoForge服务端？
 
-由于NeoGradle构建工具的一些问题（参见 [neoforged/NeoGradle#282](https://github.com/neoforged/NeoGradle/issues/282)），我们无法同时支持多个不兼容版本的Neoforge服务端。
+由于NeoGradle构建工具的一些问题（参见 [neoforged/NeoGradle#282](https://github.com/neoforged/NeoGradle/issues/282)），我们无法同时支持多个不兼容版本的NeoForge服务端。
 
-因为1.21.1版本的游玩人数较多，因此我们优先支持Neoforge 1.21.1。
+因为1.21.1版本的游玩人数较多，因此我们优先支持NeoForge 1.21.1。
 
 ## 5. 是否计划在未来支持多服务端？
 

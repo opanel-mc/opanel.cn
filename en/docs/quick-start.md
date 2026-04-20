@@ -30,7 +30,7 @@ Move the downloaded jar file into the corresponding plugins / mods folder, and a
 
 The minimum Fabric Loader version supported by OPanel is `0.16.14` (`0.17.3` for Minecraft versions `1.21.11` and above).
 
-The minimum Neoforge version supported by OPanel is `21.1.217`.
+The minimum NeoForge version supported by OPanel is `21.1.217`.
 
 The Bukkit 1.16.x version of OPanel requires Java version `>=14` to run properly.
 

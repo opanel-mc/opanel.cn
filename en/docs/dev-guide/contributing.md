@@ -32,11 +32,11 @@ opanel
 - The `frontend` folder contains the source code for the frontend pages. The frontend is built using [Next.js](https://nextjs.org) and [Shadcn UI](https://ui.shadcn.com).
 - The `core` folder is the core of the entire project, including a series of core logic and functionalities, such as the web server and backend APIs.
 - `fabric-helper` folder contains the shared code of Fabric implementation modules.
-- `forge-helper` folder contains the shared code of Forge (not including Neoforge) implementation modules.
+- `forge-helper` folder contains the shared code of Forge (not including NeoForge) implementation modules.
 - `bukkit-helper` folder contains the shared code of Bukkit series implementation modules.
 - Folders starting with `fabric-` are Fabric implementations for different Minecraft versions.
 - Folders starting with `forge-` are Forge implementations for different Minecraft versions.
-- Folders starting with `neoforge-` are Neoforge implementations for different Minecraft versions.
+- Folders starting with `neoforge-` are NeoForge implementations for different Minecraft versions.
 - Folders starting with `spigot-` are Bukkit implementations for different versions of Minecraft.
 - Folders starting with `folia-` are Folia implementations for different versions of Minecraft.
 
@@ -86,7 +86,7 @@ npm install
 
 ### Server-side functionality / Backend API
 
-Prepare a Fabric / Forge / Neoforge / Bukkit server in advance for testing, then follow the guide below to build a jar file. Next, place the jar file you want to debug into the corresponding `mods` or `plugins` folder. After restarting the server, the latest changes will be applied to your test server.
+Prepare a Fabric / Forge / NeoForge / Bukkit server in advance for testing, then follow the guide below to build a jar file. Next, place the jar file you want to debug into the corresponding `mods` or `plugins` folder. After restarting the server, the latest changes will be applied to your test server.
 
 #### Adapt the new version
 

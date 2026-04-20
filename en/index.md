@@ -21,7 +21,7 @@ hero:
 
 features:
   - title: Multi-platform
-    details: As a server-side plugin / mod, OPanel supports multiple Minecraft versions on several mainstream server platforms, including Bukkit, Spigot, Paper, Folia, Fabric, Forge and Neoforge.
+    details: As a server-side plugin / mod, OPanel supports multiple Minecraft versions on several mainstream server platforms, including Bukkit, Spigot, Paper, Folia, Fabric, Forge and NeoForge.
     icon: 🌏
     link: /en/docs/versions
     linkText: Versions List
