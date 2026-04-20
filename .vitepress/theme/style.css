@@ -48,6 +48,8 @@
   --opanel-theme-2: #7f4c26;
   --opanel-theme-3: #c0753c;
   --opanel-theme-soft: #f3e4d0;
+  --opanel-announcement-bg: #e5f7e4;
+  --opanel-announcement-feat: #8dc68a;
 
   --vp-c-bg: var(--vp-c-white);
   --vp-c-bg-soft: #f4f4f4;
@@ -84,6 +86,8 @@
   --opanel-theme-2: #f89d13;
   --opanel-theme-3: #df921e;
   --opanel-theme-soft: #482b12;
+  --opanel-announcement-bg: #072308;
+  --opanel-announcement-feat: #1c3f1d;
 
   --vp-c-bg: var(--vp-c-black);
   --vp-c-bg-soft: #141414;
@@ -209,5 +213,9 @@
       width: 300px;
     }
   }
+}
+
+.VPHomeHero {
+  padding-bottom: 12px !important;
 }
 
