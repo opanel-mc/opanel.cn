@@ -11,7 +11,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 
 .announcement-container {
   padding: 0 64px;

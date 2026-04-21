@@ -19,33 +19,32 @@ hero:
       text: Donate
       link: https://nocp.space/donate
 
-features:
-  - title: Multi-platform
-    details: As a server-side plugin / mod, OPanel supports multiple Minecraft versions on several mainstream server platforms, including Bukkit, Spigot, Paper, Folia, Fabric, Forge and NeoForge.
-    icon: 🌏
-    link: /en/docs/versions
-    linkText: Versions List
-  - title: Feature-rich
-    details: Deeply integrated with the server, supporting features include save manager, player manager, gamerules editing, terminal, log manager and more.
-    icon: 🛠️
-  - title: Active Community
-    details: The project team members are active in the community. Just feel free to ask questions or give feedback on GitHub or QQ groups, and the dev team will answer and resolve the issues.
-    icon: 🤗
-    link: https://qm.qq.com/q/1t1VHv1eHa
-    linkText: Join the QQ group
+# features:
+#   - title: Multi-platform
+#     details: As a server-side plugin / mod, OPanel supports multiple Minecraft versions on several mainstream server platforms, including Bukkit, Spigot, Paper, Folia, Fabric, Forge and NeoForge.
+#     icon: 🌏
+#     link: /en/docs/versions
+#     linkText: Versions List
+#   - title: Feature-rich
+#     details: Deeply integrated with the server, supporting features include save manager, player manager, gamerules editing, terminal, log manager and more.
+#     icon: 🛠️
+#   - title: Active Community
+#     details: The project team members are active in the community. Just feel free to ask questions or give feedback on GitHub or QQ groups, and the dev team will answer and resolve the issues.
+#     icon: 🤗
+#     link: https://qm.qq.com/q/1t1VHv1eHa
+#     linkText: Join the QQ group
 ---
 
 <script setup>
 import { useData } from "vitepress";
+import PreviewImage from "../.vitepress/theme/components/PreviewImage.vue";
+import Features from "../.vitepress/theme/components/Features.vue";
 
 const { isDark } = useData();
 </script>
 
-<ClientOnly>
+<PreviewImage
+  dark="/static/preview-dark.png"
+  light="/static/preview-light.png"/>
 
-<div class="preview-container">
-  <img v-if="isDark" src="/static/preview-dark.png" alt="preview-image"/>
-  <img v-else src="/static/preview-light.png" alt="preview-image"/>
-</div>
-
-</ClientOnly>
+<Features />
