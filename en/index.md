@@ -38,7 +38,7 @@ hero:
 <script setup>
 import { useData } from "vitepress";
 import PreviewImage from "../.vitepress/theme/components/PreviewImage.vue";
-import Features from "../.vitepress/theme/components/Features.vue";
+import FeaturesEN from "../.vitepress/theme/components/FeaturesEN.vue";
 
 const { isDark } = useData();
 </script>
@@ -47,4 +47,4 @@ const { isDark } = useData();
   dark="/static/preview-dark.png"
   light="/static/preview-light.png"/>
 
-<Features />
+<FeaturesEN />

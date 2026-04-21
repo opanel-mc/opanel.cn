@@ -16,13 +16,13 @@ import VPButton from "vitepress/dist/client/theme-default/components/VPButton.vu
         <img src="/assets/platforms/neoforged.png" class="logo logo-neoforge" alt=""/>
       </div>
       <div class="platform-content">
-        <h2 class="platform-title">多平台支持</h2>
+        <h2 class="platform-title">Multi-platform Support</h2>
         <p class="platform-subtitle">
-          作为服务端插件 / 模组，OPanel支持多个主流服务端平台的多个Minecraft版本，包括Bukkit、Fabric、Forge和NeoForge。
+          As a server-side plugin / mod, OPanel supports multiple Minecraft versions on several mainstream server platforms, including Bukkit, Spigot, Paper, Folia, Fabric, Forge and NeoForge.
         </p>
         <p>
           <a href="/docs/versions">
-            版本列表
+            Versions List
             <span class="vpi-arrow-right link-text-icon"></span>
           </a>
         </p>
@@ -33,8 +33,8 @@ import VPButton from "vitepress/dist/client/theme-default/components/VPButton.vu
         <PreviewImage dark="/assets/showcases/inventory-dark.png" light="/assets/showcases/inventory-light.png"/>
       </div>
       <div class="section-content">
-        <h2 class="section-title"><span class="title-highlight">背包</span>编辑</h2>
-        <p class="section-subtitle">高度还原游戏内视觉效果与操作逻辑，背包数据实时更新</p>
+        <h2 class="section-title"><span class="title-highlight">Inventory</span> Editor</h2>
+        <p class="section-subtitle">Highly restored in-game visual effects and operation logic, with real-time inventory data updates</p>
       </div>
     </section>
     <section class="showcase feature-terminal">
@@ -42,8 +42,8 @@ import VPButton from "vitepress/dist/client/theme-default/components/VPButton.vu
         <PreviewImage dark="/assets/showcases/terminal-dark.png" light="/assets/showcases/terminal-light.png"/>
       </div>
       <div class="section-content">
-        <h2 class="section-title">服务器<span class="title-highlight">后台</span></h2>
-        <p class="section-subtitle">终端日志彩色渲染，支持Tab命令补全、快捷方式和历史记录</p>
+        <h2 class="section-title">Server <span class="title-highlight">Terminal</span></h2>
+        <p class="section-subtitle">Colorized terminal logs with Tab command completion, shortcuts, and history</p>
       </div>
     </section>
     <section class="feature-openapi">
@@ -54,23 +54,23 @@ import VPButton from "vitepress/dist/client/theme-default/components/VPButton.vu
           <div class="api-entry"><span class="method get">GET</span><span class="api-path">/open-api/plugins</span></div>
           <div class="api-entry"><span class="method get">GET</span><span class="api-path">/open-api/players</span></div>
           <div class="api-entry"><span class="method get">GET</span><span class="api-path">/open-api/players/:uuid</span></div>
-          <p class="api-desc">通过OPanel开放API，服务器官网可以轻松展示各项实时数据</p>
+          <p class="api-desc">Server websites can easily display real-time data through OPanel's open API</p>
         </div>
         <div class="api-info">
-          <h2 class="api-title">可拓展的<span class="api-title-highlight">开放 API</span></h2>
+          <h2 class="api-title">Extendable <span class="api-title-highlight">Open API</span></h2>
           <div class="server-stats">
             <div class="mc-header">
               <span class="mc-name">Example Server</span>
-              <span class="mc-badge"><span class="mc-dot"></span>在线</span>
+              <span class="mc-badge"><span class="mc-dot"></span>Online</span>
             </div>
             <div class="mc-ip">play.example.com</div>
             <div class="mc-footer">
               <div class="mc-stat">
-                <span class="mc-stat-label">在线玩家</span>
+                <span class="mc-stat-label">Online Players</span>
                 <span class="mc-stat-val">12 / 20</span>
               </div>
               <div class="mc-stat">
-                <span class="mc-stat-label">版本</span>
+                <span class="mc-stat-label">Version</span>
                 <span class="mc-stat-val">Paper 26.1.2</span>
               </div>
               <div class="mc-stat">
@@ -83,11 +83,11 @@ import VPButton from "vitepress/dist/client/theme-default/components/VPButton.vu
       </div>
     </section>
     <div class="features-footer">
-      <p class="footer-hint">更多功能等你发现...</p>
+      <p class="footer-hint">More features await your discovery...</p>
       <VPButton
         tag="a"
         href="/docs/quick-start"
-        text="开始使用"/>
+        text="Get Started"/>
     </div>
   </div>
 </template>
