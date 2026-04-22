@@ -21,7 +21,7 @@ import VPButton from "vitepress/dist/client/theme-default/components/VPButton.vu
           As a server-side plugin / mod, OPanel supports multiple Minecraft versions on several mainstream server platforms, including Bukkit, Spigot, Paper, Folia, Fabric, Forge and NeoForge.
         </p>
         <p>
-          <a href="/docs/versions">
+          <a href="/en/docs/versions">
             Versions List
             <span class="vpi-arrow-right link-text-icon"></span>
           </a>
@@ -44,6 +44,21 @@ import VPButton from "vitepress/dist/client/theme-default/components/VPButton.vu
       <div class="section-content">
         <h2 class="section-title">Server <span class="title-highlight">Terminal</span></h2>
         <p class="section-subtitle">Colorized terminal logs with Tab command completion, shortcuts, and history</p>
+      </div>
+    </section>
+    <section class="showcase feature-mcp">
+      <div class="section-image">
+        <PreviewImage dark="/assets/showcases/mcp.png" light="/assets/showcases/mcp.png"/>
+      </div>
+      <div class="section-content">
+        <h2 class="section-title"><span class="title-highlight">MCP</span> Support</h2>
+        <p class="section-subtitle">Integrate with various AI agents through the MCP tools, such as OpenClaw and Claude Code</p>
+        <p>
+          <a href="/en/docs/mcp">
+            Learn More
+            <span class="vpi-arrow-right link-text-icon"></span>
+          </a>
+        </p>
       </div>
     </section>
     <section class="feature-openapi">
@@ -83,10 +98,10 @@ import VPButton from "vitepress/dist/client/theme-default/components/VPButton.vu
       </div>
     </section>
     <div class="features-footer">
-      <p class="footer-hint">More features await your discovery...</p>
+      <p class="footer-hint">Discover more...</p>
       <VPButton
         tag="a"
-        href="/docs/quick-start"
+        href="/en/docs/quick-start"
         text="Get Started"/>
     </div>
   </div>
@@ -159,15 +174,15 @@ import VPButton from "vitepress/dist/client/theme-default/components/VPButton.vu
   max-width: 760px;
 }
 
-.platform-content a {
+a {
   text-decoration: none;
 }
 
-.platform-content a:hover {
+a:hover {
   text-decoration: underline;
 }
 
-.platform-content a .link-text-icon {
+a .link-text-icon {
   display: inline-block;
   width: 14px;
   height: 14px;
@@ -248,7 +263,7 @@ import VPButton from "vitepress/dist/client/theme-default/components/VPButton.vu
   -webkit-text-fill-color: transparent;
 }
 
-.feature-inventory .section-title .title-highlight {
+.feature-inventory .section-title .title-highlight, .feature-mcp .section-title .title-highlight {
   background-image: linear-gradient(90deg, var(--vp-c-bg) 0%, var(--opanel-theme-1) 50%, var(--opanel-theme-3) 100%);
 }
 
@@ -511,18 +526,14 @@ import VPButton from "vitepress/dist/client/theme-default/components/VPButton.vu
   }
 
   .openapi-card {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .openapi-card::before {
     font-size: 160px;
-    top: -20px;
+    top: auto;
+    bottom: -10px;
     left: -10px;
-  }
-
-  .api-list {
-    border-right: none;
-    border-bottom: 1px solid var(--vp-home-preview-border-color);
   }
 
   .api-info {

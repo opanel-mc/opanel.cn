@@ -46,6 +46,21 @@ import VPButton from "vitepress/dist/client/theme-default/components/VPButton.vu
         <p class="section-subtitle">终端日志彩色渲染，支持Tab命令补全、快捷方式和历史记录</p>
       </div>
     </section>
+    <section class="showcase feature-mcp">
+      <div class="section-image">
+        <PreviewImage dark="/assets/showcases/mcp.png" light="/assets/showcases/mcp.png"/>
+      </div>
+      <div class="section-content">
+        <h2 class="section-title"><span class="title-highlight">MCP</span>支持</h2>
+        <p class="section-subtitle">可通过MCP工具接入各种AI助手，如OpenClaw、Claude Code等</p>
+        <p>
+          <a href="/docs/mcp">
+            了解更多
+            <span class="vpi-arrow-right link-text-icon"></span>
+          </a>
+        </p>
+      </div>
+    </section>
     <section class="feature-openapi">
       <div class="openapi-card">
         <div class="api-list">
@@ -159,15 +174,15 @@ import VPButton from "vitepress/dist/client/theme-default/components/VPButton.vu
   max-width: 760px;
 }
 
-.platform-content a {
+a {
   text-decoration: none;
 }
 
-.platform-content a:hover {
+a:hover {
   text-decoration: underline;
 }
 
-.platform-content a .link-text-icon {
+a .link-text-icon {
   display: inline-block;
   width: 14px;
   height: 14px;
@@ -248,7 +263,7 @@ import VPButton from "vitepress/dist/client/theme-default/components/VPButton.vu
   -webkit-text-fill-color: transparent;
 }
 
-.feature-inventory .section-title .title-highlight {
+.feature-inventory .section-title .title-highlight, .feature-mcp .section-title .title-highlight {
   background-image: linear-gradient(90deg, var(--vp-c-bg) 0%, var(--opanel-theme-1) 50%, var(--opanel-theme-3) 100%);
 }
 
@@ -511,18 +526,14 @@ import VPButton from "vitepress/dist/client/theme-default/components/VPButton.vu
   }
 
   .openapi-card {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .openapi-card::before {
     font-size: 160px;
-    top: -20px;
+    top: auto;
+    bottom: -10px;
     left: -10px;
-  }
-
-  .api-list {
-    border-right: none;
-    border-bottom: 1px solid var(--vp-home-preview-border-color);
   }
 
   .api-info {

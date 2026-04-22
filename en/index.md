@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "OPanel"
   text: "One plugin,\nTotal control."
-  tagline: A user-friendly and visually appealing next-generation Minecraft server management panel
+  tagline: "A sleek, next-gen\nMinecraft server management panel"
   image:
     src: /static/logo.svg
     alt: opanel-logo
