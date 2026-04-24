@@ -2,7 +2,7 @@
 
 The versions marked below with `√` are adapted, tested and available.
 
-> The `Bukkit` platform here refers to the Bukkit servers in a broad sense, including Paper, Spigot, Craftbukkit and etc.
+> The `Bukkit` platform here refers to the Bukkit servers in a broad sense, including Paper, Spigot, Craftbukkit, Leaves and etc.
 
 :::info
 

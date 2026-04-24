@@ -2,7 +2,7 @@
 
 下面用`√`标出的版本是经过适配和测试，且可用的版本。
 
-> 此处的`Bukkit`平台指广义上的Bukkit服务端，包括Paper、Spigot、Craftbukkit等服务端
+> 此处的`Bukkit`平台指广义上的Bukkit服务端，包括Paper、Spigot、Craftbukkit、Leaves等服务端
 
 :::info
 
