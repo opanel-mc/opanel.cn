@@ -19,33 +19,32 @@ hero:
       text: 捐助
       link: https://nocp.space/donate
 
-features:
-  - title: 多平台
-    details: 作为服务端插件 / 模组，OPanel支持多个主流服务端平台的多个Minecraft版本，包括Bukkit、Fabric、Forge和NeoForge。
-    icon: 🌏
-    link: /docs/versions
-    linkText: 版本列表
-  - title: 功能丰富
-    details: 与服务端深度融合，支持功能包括存档管理、玩家管理、游戏规则编辑、后台终端、日志管理等等。
-    icon: 🛠️
-  - title: 社区活跃
-    details: 项目组人员长期活跃，用户可以在Github与QQ群中提问或反馈，项目开发组将尽力解答和解决问题。
-    icon: 🤗
-    link: https://qm.qq.com/q/1t1VHv1eHa
-    linkText: 加入QQ群
+# features:
+#   - title: 多平台
+#     details: 作为服务端插件 / 模组，OPanel支持多个主流服务端平台的多个Minecraft版本，包括Bukkit、Fabric、Forge和NeoForge。
+#     icon: 🌏
+#     link: /docs/versions
+#     linkText: 版本列表
+#   - title: 功能丰富
+#     details: 与服务端深度融合，支持功能包括存档管理、玩家管理、游戏规则编辑、后台终端、日志管理等等。
+#     icon: 🛠️
+#   - title: 社区活跃
+#     details: 项目组人员长期活跃，用户可以在Github与QQ群中提问或反馈，项目开发组将尽力解答和解决问题。
+#     icon: 🤗
+#     link: https://qm.qq.com/q/1t1VHv1eHa
+#     linkText: 加入QQ群
 ---
 
 <script setup>
 import { useData } from "vitepress";
+import PreviewImage from "./.vitepress/theme/components/PreviewImage.vue";
+import Features from "./.vitepress/theme/components/Features.vue";
 
 const { isDark } = useData();
 </script>
 
-<ClientOnly>
+<PreviewImage
+  dark="/static/preview-dark.png"
+  light="/static/preview-light.png"/>
 
-<div class="preview-container">
-  <img v-if="isDark" src="/static/preview-dark.png" alt="preview-image"/>
-  <img v-else src="/static/preview-light.png" alt="preview-image"/>
-</div>
-
-</ClientOnly>
+<Features />
