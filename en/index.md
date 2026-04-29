@@ -14,7 +14,7 @@ hero:
       link: /en/docs/quick-start
     - theme: alt
       text: Download
-      link: https://github.com/opanel-mc/opanel/releases
+      link: https://dist.opanel.cn
     - theme: alt
       text: Donate
       link: https://nocp.space/donate

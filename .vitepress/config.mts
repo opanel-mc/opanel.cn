@@ -14,7 +14,7 @@ export default defineConfig({
       { text: "文档", link: "/docs/quick-start" },
       { text: "友链", link: "/links" },
       { text: "Wiki", link: "/wiki" },
-      { text: "下载", link: "https://github.com/opanel-mc/opanel/releases" },
+      { text: "下载", link: "https://dist.opanel.cn" },
       { text: "捐助", link: "https://nocp.space/donate" },
     ],
 
@@ -150,7 +150,7 @@ export default defineConfig({
           { text: "Home", link: "/en" },
           { text: "Docs", link: "/en/docs/quick-start" },
           { text: "Links", link: "/en/links" },
-          { text: "Download", link: "https://github.com/opanel-mc/opanel/releases" },
+          { text: "Download", link: "https://dist.opanel.cn" },
           { text: "Donate", link: "https://nocp.space/donate" },
         ],
 
