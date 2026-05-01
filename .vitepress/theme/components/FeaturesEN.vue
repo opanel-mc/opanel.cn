@@ -7,13 +7,13 @@ import VPButton from "vitepress/dist/client/theme-default/components/VPButton.vu
   <div class="features-container">
     <section class="feature-multiplatform">
       <div class="platform-bg" aria-hidden="true">
-        <img src="/assets/platforms/bukkit.png" class="logo logo-bukkit" alt=""/>
-        <img src="/assets/platforms/spigot.png" class="logo logo-spigot" alt=""/>
-        <img src="/assets/platforms/paper.svg" class="logo logo-paper" alt=""/>
-        <img src="/assets/platforms/leaves.svg" class="logo logo-leaves" alt=""/>
-        <img src="/assets/platforms/fabric.svg" class="logo logo-fabric" alt=""/>
-        <img src="/assets/platforms/forge.svg" class="logo logo-forge" alt=""/>
-        <img src="/assets/platforms/neoforged.png" class="logo logo-neoforge" alt=""/>
+        <img src="/static/assets/platforms/bukkit.png" class="logo logo-bukkit" alt=""/>
+        <img src="/static/assets/platforms/spigot.png" class="logo logo-spigot" alt=""/>
+        <img src="/static/assets/platforms/paper.svg" class="logo logo-paper" alt=""/>
+        <img src="/static/assets/platforms/leaves.svg" class="logo logo-leaves" alt=""/>
+        <img src="/static/assets/platforms/fabric.svg" class="logo logo-fabric" alt=""/>
+        <img src="/static/assets/platforms/forge.svg" class="logo logo-forge" alt=""/>
+        <img src="/static/assets/platforms/neoforged.png" class="logo logo-neoforge" alt=""/>
       </div>
       <div class="platform-content">
         <h2 class="platform-title">Multi-platform Support</h2>
@@ -30,7 +30,7 @@ import VPButton from "vitepress/dist/client/theme-default/components/VPButton.vu
     </section>
     <section class="showcase feature-inventory">
       <div class="section-image">
-        <PreviewImage dark="/assets/showcases/inventory-dark.png" light="/assets/showcases/inventory-light.png"/>
+        <PreviewImage dark="/static/assets/showcases/inventory-dark.png" light="/static/assets/showcases/inventory-light.png"/>
       </div>
       <div class="section-content">
         <h2 class="section-title"><span class="title-highlight">Inventory</span> Editor</h2>
@@ -39,7 +39,7 @@ import VPButton from "vitepress/dist/client/theme-default/components/VPButton.vu
     </section>
     <section class="showcase feature-terminal">
       <div class="section-image">
-        <PreviewImage dark="/assets/showcases/terminal-dark.png" light="/assets/showcases/terminal-light.png"/>
+        <PreviewImage dark="/static/assets/showcases/terminal-dark.png" light="/static/assets/showcases/terminal-light.png"/>
       </div>
       <div class="section-content">
         <h2 class="section-title">Server <span class="title-highlight">Terminal</span></h2>
@@ -48,7 +48,7 @@ import VPButton from "vitepress/dist/client/theme-default/components/VPButton.vu
     </section>
     <section class="showcase feature-mcp">
       <div class="section-image">
-        <PreviewImage dark="/assets/showcases/mcp.png" light="/assets/showcases/mcp.png"/>
+        <PreviewImage dark="/static/assets/showcases/mcp.png" light="/static/assets/showcases/mcp.png"/>
       </div>
       <div class="section-content">
         <h2 class="section-title"><span class="title-highlight">MCP</span> Support</h2>
