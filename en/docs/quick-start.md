@@ -5,8 +5,8 @@ OPanel is essentially a plugin / mod, so installing OPanel actually means downlo
 ## Download
 
 You can get OPanel through the following methods:
+- OPanel Resource Library: <https://dist.opanel.cn>
 - Github Releases: <https://github.com/opanel-mc/opanel/releases>
-- OPanel Resource Library: <https://dist.opanel.cn> (Under maintenance...)
 - Curseforge: <https://curseforge.com/minecraft/bukkit-plugins/opanel>
 
 Due to the differences of each platform and version, a download list for a single OPanel version usually contains multiple jar files for different versions. The file name format of these jar files is `opanel-<server>-<game version>-build-<OPanel version>.jar`.
