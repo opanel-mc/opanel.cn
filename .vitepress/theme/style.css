@@ -87,11 +87,12 @@
   --opanel-theme-3: #df921e;
   --opanel-theme-soft: #482b12;
   --opanel-announcement-bg: #072308;
-  --opanel-announcement-feat: #1c3f1d;
+  --opanel-announcement-feat: #235625;
 
   --vp-c-bg: var(--vp-c-black);
   --vp-c-bg-soft: #141414;
   --vp-c-bg-alt: #141414;
+  --vp-c-text-1: #dedede;
 
   --vp-c-default-soft: #bcbcbc29;
 }
@@ -179,7 +180,7 @@
 }
 
 .preview-container {
-  margin-top: 60px;
+  margin-top: 30px;
   img {
     border: 1px var(--vp-home-preview-border-color) solid;
     border-radius: 5px;
@@ -216,6 +217,33 @@
 }
 
 .VPHomeHero {
-  padding-bottom: 12px !important;
+  padding-bottom: 35px !important;
+  .container {
+    flex-direction: column;
+    gap: 40px;
+    .main {
+      order: 2 !important;
+      margin: 0 auto;
+      text-align: center;
+      .heading {
+        align-items: center;
+      }
+      .actions {
+        justify-content: center;
+      }
+    }
+    .image {
+      flex-grow: 0;
+      order: 1 !important;
+      margin: -108px -24px -48px;
+      min-height: auto;
+      .image-container {
+        width: 392px;
+        height: 392px;
+        display: block;
+        transform: none;
+      }
+    }
+  }
 }
 

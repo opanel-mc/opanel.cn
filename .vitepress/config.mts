@@ -97,7 +97,8 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: "github", link: "https://github.com/opanel-mc/opanel" }
+      { icon: "qq", link: "https://qm.qq.com/q/1t1VHv1eHa" },
+      { icon: "github", link: "https://github.com/opanel-mc/opanel" },
     ],
 
     footer: {
