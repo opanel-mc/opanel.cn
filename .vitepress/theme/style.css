@@ -102,16 +102,21 @@
  * -------------------------------------------------------------------------- */
 :root {
   --vp-nav-bg-color: #ffffffbd;
+  --vp-nav-backdrop-filter: blur(10px);
   .VPNavBar {
-    backdrop-filter: blur(10px);
+    backdrop-filter: var(--vp-nav-backdrop-filter);
+    border-bottom: 0 !important;
+    .divider .divider-line {
+      background-color: transparent !important;
+    }
+  }
+  .VPLocalNav {
+    display: none;
   }
 }
 
 .dark {
   --vp-nav-bg-color: #0c0c0cbd;
-  .VPNavBar {
-    backdrop-filter: blur(10px);
-  }
 }
 
 /**
@@ -244,6 +249,13 @@
         transform: none;
       }
     }
+  }
+}
+
+.VPSidebar {
+  background-color: transparent !important;
+  .curtain {
+    background-color: transparent;
   }
 }
 
