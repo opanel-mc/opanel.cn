@@ -6,6 +6,7 @@ export default defineConfig({
   head: [
     ["link", { rel: "icon", href: "/static/favicon.png" }]
   ],
+  cleanUrls: true,
   themeConfig: {
     logo: "/static/logo.svg",
 
@@ -64,7 +65,8 @@ export default defineConfig({
             ]
           },
           {
-            text: "其他",
+            text: "云服务商指南",
+            base: "/docs/platforms/",
             items: [
               {
                 text: "在雨云游戏云面板中使用OPanel",
