@@ -8,11 +8,11 @@ If you want to adapt OPanel for the new game version, please read this article c
 
 ## To begin with
 
-Please follow the steps in the [Contributing Guidelines](./contributing.html) to fork the repository, download the source code, and install dependencies before proceeding with adaptation development.
+Please follow the steps in the [Contributing Guidelines](./contributing) to fork the repository, download the source code, and install dependencies before proceeding with adaptation development.
 
 ## Select the version to adapt
 
-You can check which versions of OPanel are currently not supported in the [Platform and Version Support](/en/docs/versions.html) section. Since some game versions are mutually compatible, we do not create separate adaptations for every single version. Instead, we adapt to the lowest version that can be forward compatible (for example, the module `fabric-1.21` supports `1.21~1.21.1`, and the module `fabric-1.21.2` supports `1.21.2~1.21.4`). **A new module is only created for separate adaptation when there are differences in the adaptation code or incompatibility issues.**
+You can check which versions of OPanel are currently not supported in the [Platform and Version Support](/en/docs/versions) section. Since some game versions are mutually compatible, we do not create separate adaptations for every single version. Instead, we adapt to the lowest version that can be forward compatible (for example, the module `fabric-1.21` supports `1.21~1.21.1`, and the module `fabric-1.21.2` supports `1.21.2~1.21.4`). **A new module is only created for separate adaptation when there are differences in the adaptation code or incompatibility issues.**
 Therefore, you can first choose a major version that you want to adapt to and that OPanel does not currently support (such as `1.19.x`, `1.20.x`, etc.), then start adapting from the first release of that major version (such as `1.19` or `1.20`, etc.), and then determine the version range supported by the new module through actual server testing.
 
 Below, we will use adapting to Fabric 1.20.4 as an example to explain how to adapt to other game versions.
@@ -130,7 +130,7 @@ Since the server may have been modified across different game versions, it may c
 
 ### Test
 
-If the code is built successfully, the jar file for the version you adapted will be generated in the `/build/libs` folder. Then, you can follow the steps in the [Contributing Guidelines](./contributing.html#%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%8A%9F%E8%83%BD-%E5%90%8E%E7%AB%AFapi) to test OPanel.
+If the code is built successfully, the jar file for the version you adapted will be generated in the `/build/libs` folder. Then, you can follow the steps in the [Contributing Guidelines](./contributing#%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%8A%9F%E8%83%BD-%E5%90%8E%E7%AB%AFapi) to test OPanel.
 
 :::warning Note
 

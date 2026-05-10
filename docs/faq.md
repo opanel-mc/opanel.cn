@@ -4,7 +4,7 @@
 
 ## 1. 找不到访问密钥？
 
-参见[快速开始](/docs/quick-start.html#%E9%A6%96%E6%AC%A1%E5%90%AF%E5%8A%A8)文档。
+参见[快速开始](/docs/quick-start#%E9%A6%96%E6%AC%A1%E5%90%AF%E5%8A%A8)文档。
 
 ## 2. 密钥丢失了怎么办？
 

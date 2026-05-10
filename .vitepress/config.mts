@@ -50,6 +50,10 @@ export default defineConfig({
                 text: "MCP",
                 link: "mcp"
               },
+              {
+                text: "连接到MCDR",
+                link: "mcdr-bridge"
+              }
             ]
           },
           {
@@ -187,6 +191,10 @@ export default defineConfig({
                     text: "MCP",
                     link: "mcp"
                   },
+                  {
+                    text: "Connecting to MCDR",
+                    link: "mcdr-bridge"
+                  }
                 ]
               },
               {

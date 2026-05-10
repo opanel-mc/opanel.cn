@@ -90,7 +90,7 @@ Prepare a Fabric / Forge / NeoForge / Bukkit server in advance for testing, then
 
 #### Adapt the new version
 
-See [Adaptation Guidelines](./adaptation.html)。
+See [Adaptation Guidelines](./adaptation)。
 
 ### Frontend
 

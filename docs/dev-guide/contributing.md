@@ -90,7 +90,7 @@ npm install
 
 #### 适配新版本
 
-参见[适配指南](./adaptation.html)。
+参见[适配指南](./adaptation)。
 
 ### 前端
 

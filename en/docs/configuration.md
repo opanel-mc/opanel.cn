@@ -22,7 +22,7 @@ The location of the configuration file varies depending on the server. You can r
 
 :::warning 
 
-- `accessKey` stores the hash of the key, not the key itself. If the key is lost, please refer to the instructions in [Quick Start](./quick-start.html#usage) for key reset.
+- `accessKey` stores the hash of the key, not the key itself. If the key is lost, please refer to the instructions in [Quick Start](./quick-start#usage) for key reset.
 - `cookieSecure` requires additional SSL certificate and reverse proxy configuration to enable HTTPS communication.
 - If you are using a reverse proxy, set `proxyHeaders` to `true` to obtain the correct IP address.
 
