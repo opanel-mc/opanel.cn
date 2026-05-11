@@ -109,7 +109,7 @@ export default defineConfig({
 
     footer: {
       copyright: "Copyright © 2026 OPanel Project",
-      message: "Released under the MPL-2.0 License"
+      message: "Released under the GPL-3.0 License"
     },
 
     search: {
