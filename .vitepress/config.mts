@@ -1,10 +1,21 @@
 import { defineConfig } from "vitepress";
 
+const baiduAnalyticsScript = `
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?3923bc3d16b93b94e578e9f3d48494fe";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+`;
+
 export default defineConfig({
   title: "OPanel",
   description: "OPanel官方网站与文档",
   head: [
-    ["link", { rel: "icon", href: "/static/favicon.png" }]
+    ["link", { rel: "icon", href: "/static/favicon.png" }],
+    ["script", {}, baiduAnalyticsScript]
   ],
   cleanUrls: true,
   themeConfig: {
