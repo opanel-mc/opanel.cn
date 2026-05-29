@@ -32,9 +32,11 @@ e.g. The public IP provided by the cloud server provider is `12.34.56.78`, and y
 
 :::
 
-## 4. Why not support other versions of NeoForge?
+## 4. Why isn't the NeoForge server of version 1.21.9+ supported?
 
-Working in progress.
+In version 21.9, NeoForge refactored the logic of FML's underlying class loader, which means OPanel needs significant changes to how the frontend static resources are loaded in order to adapt. Therefore, support for version 1.21.9+ is suspended for now.
+
+For more about NeoForge's refactoring of FML's underlying layer, please refer to the [NeoForge 21.9 Changelog](https://neoforged.net/news/21.9release/#fml-changes).
 
 ## 5. Would OPanel support multi-server in the future?
 

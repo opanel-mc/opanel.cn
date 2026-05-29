@@ -32,9 +32,11 @@
 
 :::
 
-## 4. 为什么不支持其他版本的NeoForge服务端？
+## 4. 为什么不支持1.21.9+版本的NeoForge服务端？
 
-在做了。
+NeoForge在21.9版本重构了FML底层类加载器的逻辑，导致OPanel在适配时需要对前端静态资源的加载进行较大改动，因此目前对1.21.9+版本的支持先暂时搁置。
+
+关于NeoForge对FML底层的重构，参见[NeoForge 21.9 更新日志](https://neoforged.net/news/21.9release/#fml-changes)。
 
 ## 5. 是否计划在未来支持多服务端？
 
