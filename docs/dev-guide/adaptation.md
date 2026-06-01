@@ -28,11 +28,15 @@ outline: "deep"
 
 :::warning 注意
 
-如果适配的服务端是Bukkit，那么在服务端一栏应该填`spigot`，如：`spigot-1.20`
+如果适配的服务端是Bukkit，那么在服务端一栏应该填`spigot`，如：`spigot-1.20`。Spigot和Folia模块都应放在`bukkit`文件夹下。
 
 :::
 
 ![adaptation-2](/static/docs/adaptation-2.png)
+
+修改模块的位置，本例中，`fabric-1.20.4`模块应放在`fabric`文件夹中。
+
+![adaptation-3](/static/docs/adaptation-3.png)
 
 由于不同Minecraft版本之间使用的Java版本可能不同，JDK一栏中应该选择相应的JDK版本，在本例中，Minecraft 1.20.4的Java版本为`17`，因此在JDK一栏应选择JDK 17的版本。
 
@@ -42,19 +46,28 @@ outline: "deep"
 
 :::
 
-![adaptation-3](/static/docs/adaptation-3.png)
+![adaptation-4](/static/docs/adaptation-4.png)
 
 设置完成后，点击`创建(C)`即可创建模块。
 
-3. Intellij IDEA在创建模块后会自动在`settings.gradle`中将模块名称添加到文件末尾，为了保持文件格式整洁，请按照模块的服务端和游戏版本将新模块放到对应的位置。
+3. 创建模块后，需要在根目录的`settings.gradle`中将新模块名称添加到对应服务端的`platformModules`列表中。请按照模块的服务端和游戏版本将新模块放到对应的位置，以保持文件格式整洁。
 
-![adaptation-4](/static/docs/adaptation-4.png)
+```groovy
+def platformModules = [
+    fabric: [
+        // ...
+        'fabric-1.20.4',
+        // ...
+    ],
+    // ...
+]
+```
 
 ## 复制文件
 
 由于同一服务端不同游戏版本的适配代码大同小异，因此在开始适配之前可以将较为接近的已适配游戏版本的代码复制到新模块的文件夹下。
 
-1. 选择一个较为接近的游戏版本，在本例中，可以选择`fabric-1.21`进行复制。
+1. 选择一个较为接近的游戏版本，在本例中，可以选择`fabric/fabric-1.21`进行复制。
 
 2. 删除新模块下的所有文件，然后将刚刚复制的文件粘贴进去。
 

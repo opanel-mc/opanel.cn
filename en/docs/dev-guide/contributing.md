@@ -20,25 +20,46 @@ opanel
 │   ├── app
 │   ├── components
 │   └── ...
-├── core
-├── fabric-...
-├── forge-...
-├── neoforge-...
-├── spigot-...
-├── folia-...
-└── ...
+├── core/
+├── fabric/
+│   ├── fabric-helper
+│   ├── fabric-helper-unmapped
+│   ├── fabric-1.19
+│   ├── fabric-1.20
+│   └── ...
+├── forge/
+│   ├── forge-helper
+│   ├── forge-1.19.4
+│   ├── forge-1.20.1
+│   └── ...
+├── neoforge/
+│   ├── neoforge-helper
+│   ├── neoforge-1.21.1
+│   └── ...
+└── bukkit/
+    ├── bukkit-helper
+    ├── spigot-1.16.1
+    ├── spigot-1.20
+    ├── folia-1.20
+    └── ...
 ```
 
 - The `frontend` folder contains the source code for the frontend pages. The frontend is built using [Next.js](https://nextjs.org) and [Shadcn UI](https://ui.shadcn.com).
 - The `core` folder is the core of the entire project, including a series of core logic and functionalities, such as the web server and backend APIs.
-- `fabric-helper` folder contains the shared code of Fabric implementation modules.
-- `forge-helper` folder contains the shared code of Forge (not including NeoForge) implementation modules.
-- `bukkit-helper` folder contains the shared code of Bukkit series implementation modules.
-- Folders starting with `fabric-` are Fabric implementations for different Minecraft versions.
-- Folders starting with `forge-` are Forge implementations for different Minecraft versions.
-- Folders starting with `neoforge-` are NeoForge implementations for different Minecraft versions.
-- Folders starting with `spigot-` are Bukkit implementations for different versions of Minecraft.
-- Folders starting with `folia-` are Folia implementations for different versions of Minecraft.
+- The `fabric` folder contains all Fabric-related adaptation modules organized by version:
+  - `fabric-helper` contains the shared code of Fabric implementation modules.
+  - `fabric-helper-unmapped` contains the shared code required for Fabric adaptation in unmapped environments.
+  - Folders starting with `fabric-` followed by a version number are Fabric implementations for different Minecraft versions.
+- The `forge` folder contains all Forge-related adaptation modules organized by version:
+  - `forge-helper` contains the shared code of Forge (not including NeoForge) implementation modules.
+  - Folders starting with `forge-` followed by a version number are Forge implementations for different Minecraft versions.
+- The `neoforge` folder contains all NeoForge-related adaptation modules organized by version:
+  - `neoforge-helper` contains the shared code of NeoForge implementation modules.
+  - Folders starting with `neoforge-` followed by a version number are NeoForge implementations for different Minecraft versions.
+- The `bukkit` folder contains all Bukkit-series (Spigot, Folia) adaptation modules organized by version:
+  - `bukkit-helper` contains the shared code of Bukkit series implementation modules.
+  - Folders starting with `spigot-` are Bukkit implementations for different versions of Minecraft.
+  - Folders starting with `folia-` are Folia implementations for different versions of Minecraft.
 
 After the plugin / mod is initialized, the program will start a web server on the specified port (default is `3000`), which includes both the frontend and backend APIs.
 
@@ -48,7 +69,7 @@ In the development environment, the frontend page is served on port `3001`, and 
 
 Before getting started, you need to install [VSCode](https://code.visualstudio.com) and [IntelliJ IDEA](https://jetbrains.com/idea). The following guide will assume that you are using these two code editors.
 
-Then, you also need to install [Node.js](https://nodejs.org) and jdk.
+Then, you also need to install [Node.js](https://nodejs.org/en/download), [Rust](https://rust-lang.org/learn/get-started) and [JDK 25](https://jdk.java.net/archive).
 
 After preparing the development environment, you can create a fork of this repository on GitHub.
 
@@ -90,7 +111,7 @@ Prepare a Fabric / Forge / NeoForge / Bukkit server in advance for testing, then
 
 #### Adapt the new version
 
-See [Adaptation Guidelines](./adaptation)。
+See [Adaptation Guidelines](./adaptation).
 
 ### Frontend
 
@@ -109,7 +130,7 @@ Then the frontend pages in the production environment will be deployed to port `
 Execute the command in the `frontend` folder
 
 ```cmd
-npm run build
+npm run build:pack
 ```
 
 This step will automatically copy the bundled frontend pages to the path `/core/src/main/resources/web` for the build of plugins / mods.

@@ -20,25 +20,46 @@ opanel
 │   ├── app
 │   ├── components
 │   └── ...
-├── core
-├── fabric-...
-├── forge-...
-├── neoforge-...
-├── spigot-...
-├── folia-...
-└── ...
+├── core/
+├── fabric/
+│   ├── fabric-helper
+│   ├── fabric-helper-unmapped
+│   ├── fabric-1.19
+│   ├── fabric-1.20
+│   └── ...
+├── forge/
+│   ├── forge-helper
+│   ├── forge-1.19.4
+│   ├── forge-1.20.1
+│   └── ...
+├── neoforge/
+│   ├── neoforge-helper
+│   ├── neoforge-1.21.1
+│   └── ...
+└── bukkit/
+    ├── bukkit-helper
+    ├── spigot-1.16.1
+    ├── spigot-1.20
+    ├── folia-1.20
+    └── ...
 ```
 
 - `frontend` 文件夹存放前端页面源码，前端使用[Next.js](https://nextjs.org)和[Shadcn UI](https://ui.shadcn.com)进行构建。
 - `core` 文件夹是整个项目的核心，包括一系列核心逻辑和功能，如Web服务器和后端API。
-- `fabric-helper` 文件夹存放Fabric服务端适配模块的共用代码。
-- `forge-helper` 文件夹存放Forge服务端（不包括NeoForge）适配模块的共用代码。
-- `bukkit-helper` 文件夹存放Bukkit系列服务端适配模块的共用代码。
-- 以 `fabric-` 开头的文件夹是不同Minecraft版本的Fabric模组实现。
-- 以 `forge-` 开头的文件夹是不同Minecraft版本的Forge模组实现。
-- 以 `neoforge-` 开头的文件夹是不同Minecraft版本的NeoForge模组实现。
-- 以 `spigot-` 开头的文件夹是不同Minecraft版本的Bukkit插件实现。
-- 以 `folia-` 开头的文件夹是不同Minecraft版本的Folia插件实现。
+- `fabric` 文件夹按版本存放所有Fabric相关的适配模块：
+  - `fabric-helper` 存放Fabric服务端适配模块的共用代码。
+  - `fabric-helper-unmapped` 存放未映射（unmapped）环境下Fabric适配所需的共用代码。
+  - 以 `fabric-` 开头并附带版本号的文件夹是不同Minecraft版本的Fabric模组实现。
+- `forge` 文件夹按版本存放所有Forge相关的适配模块：
+  - `forge-helper` 存放Forge服务端（不包括NeoForge）适配模块的共用代码。
+  - 以 `forge-` 开头并附带版本号的文件夹是不同Minecraft版本的Forge模组实现。
+- `neoforge` 文件夹按版本存放所有NeoForge相关的适配模块：
+  - `neoforge-helper` 存放NeoForge服务端适配模块的共用代码。
+  - 以 `neoforge-` 开头并附带版本号的文件夹是不同Minecraft版本的NeoForge模组实现。
+- `bukkit` 文件夹按版本存放所有Bukkit系列（Spigot、Folia）的适配模块：
+  - `bukkit-helper` 存放Bukkit系列服务端适配模块的共用代码。
+  - 以 `spigot-` 开头的文件夹是不同Minecraft版本的Bukkit插件实现。
+  - 以 `folia-` 开头的文件夹是不同Minecraft版本的Folia插件实现。
 
 在插件 / 模组初始化后，程序会在指定端口（默认为`3000`）启动一个Web服务器，该服务器包括前端和后端API。
 
@@ -48,7 +69,7 @@ opanel
 
 在开始之前，你需要安装[VSCode](https://code.visualstudio.com)和[Intellij IDEA](https://jetbrains.com/idea)。下面的指南将假定你使用的是这两款代码编辑器。
 
-然后，你还需要安装[Node.js](https://nodejs.org)和jdk。
+然后，你还需要安装[Node.js](https://nodejs.org/zh-cn/download)、[Rust](https://rust-lang.org/learn/get-started)和[JDK 25](https://jdk.java.net/archive)。
 
 准备好开发环境后，即可在Github创建本仓库的fork。
 
@@ -109,7 +130,7 @@ npm run dev
 在`frontend`文件夹下执行命令
 
 ```cmd
-npm run build
+npm run build:pack
 ```
 
 这一步会自动将打包好的前端页面复制到`/core/src/main/resources/web`路径下，以备插件 / 模组的构建。

@@ -27,11 +27,15 @@ Below, we will use adapting to Fabric 1.20.4 as an example to explain how to ada
 
 :::warning Note
 
-If the compatible server is Bukkit, then you should enter `spigot` in the server column, for example: `spigot-1.20`
+If the compatible server is Bukkit, then you should enter `spigot` in the server column, for example: `spigot-1.20`. Both Spigot and Folia modules should be placed under the `bukkit` folder.
 
 :::
 
 ![adaptation-2](/static/docs/adaptation-2.png)
+
+Change the module's location. In this example, the `fabric-1.20.4` module should be placed inside the `fabric` folder.
+
+![adaptation-3](/static/docs/adaptation-3.png)
 
 Since different Minecraft versions may use different Java versions, the corresponding JDK version should be selected under the JDK section. In this example, the Java version for Minecraft 1.20.4 is `17`, so JDK 17 should be selected in the JDK section.
 
@@ -41,18 +45,28 @@ You can check the Java versions used by different Minecraft versions on the [Min
 
 :::
 
-![adaptation-3](/static/docs/adaptation-3.png)
+![adaptation-4](/static/docs/adaptation-4.png)
 
 After completing the settings, click `Create (C)` to create the module.
 
-3. After creating the module, IntelliJ IDEA will automatically add the module name to the end of the `settings.gradle` file. To keep the file format tidy, please place the new module in the corresponding position according to the server and game version of the module.
-![adaptation-4](/static/docs/adaptation-4.png)
+3. After creating the module, you need to add the new module's name to the `platformModules` list of the corresponding server in the `settings.gradle` file at the root directory. To keep the file format tidy, please place the new module in the corresponding position according to the server and game version of the module.
+
+```groovy
+def platformModules = [
+    fabric: [
+        // ...
+        'fabric-1.20.4',
+        // ...
+    ],
+    // ...
+]
+```
 
 ## Copy Files
 
 Since the adaptation code for different game versions on the same server is largely similar, before starting the adaptation, you can copy the code of a closely related already adapted game version into the folder of the new module.
 
-1. Choose a game version that is relatively close. In this example, you can choose `fabric-1.21` for copying.
+1. Choose a game version that is relatively close. In this example, you can choose `fabric/fabric-1.21` for copying.
 
 2. Delete all files under the new module, then paste the files that were just copied.
 
@@ -130,7 +144,7 @@ Since the server may have been modified across different game versions, it may c
 
 ### Test
 
-If the code is built successfully, the jar file for the version you adapted will be generated in the `/build/libs` folder. Then, you can follow the steps in the [Contributing Guidelines](./contributing#%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%8A%9F%E8%83%BD-%E5%90%8E%E7%AB%AFapi) to test OPanel.
+If the code is built successfully, the jar file for the version you adapted will be generated in the `/build/libs` folder. Then, you can follow the steps in the [Contributing Guidelines](./contributing#server-side-functionality-backend-api) to test OPanel.
 
 :::warning Note
 
