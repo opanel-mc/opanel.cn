@@ -46,6 +46,16 @@ import VPButton from "vitepress/dist/client/theme-default/components/VPButton.vu
         <p class="section-subtitle">Colorized terminal logs with Tab command completion, shortcuts, and history</p>
       </div>
     </section>
+    <section class="showcase feature-builtin-map">
+      <div class="section-image">
+        <PreviewImage dark="/static/assets/showcases/builtin-map-dark.png" light="/static/assets/showcases/builtin-map-light.png"/>
+      </div>
+      <div class="section-content">
+        <h2 class="section-title">Builtin<br /><span class="title-highlight">Map</span></h2>
+        <p class="section-subtitle">View the in-game real-time map in the web panel</p>
+        <p class="section-note">* Need to be enabled in settings</p>
+      </div>
+    </section>
     <section class="showcase feature-mcp">
       <div class="section-image">
         <PreviewImage dark="/static/assets/showcases/mcp.png" light="/static/assets/showcases/mcp.png"/>
@@ -227,6 +237,14 @@ a .link-text-icon {
   text-align: right;
 }
 
+.feature-mcp {
+  flex-direction: row-reverse;
+}
+
+.feature-mcp .section-content {
+  text-align: right;
+}
+
 .section-image {
   flex: 0 0 auto;
   width: 480px;
@@ -263,11 +281,11 @@ a .link-text-icon {
   -webkit-text-fill-color: transparent;
 }
 
-.feature-inventory .section-title .title-highlight, .feature-mcp .section-title .title-highlight {
+.feature-inventory .section-title .title-highlight, .feature-builtin-map .section-title .title-highlight {
   background-image: linear-gradient(90deg, var(--vp-c-bg) 0%, var(--opanel-theme-1) 50%, var(--opanel-theme-3) 100%);
 }
 
-.feature-terminal .section-title .title-highlight {
+.feature-terminal .section-title .title-highlight, .feature-mcp .section-title .title-highlight {
   background-image: linear-gradient(90deg, var(--opanel-theme-3) 0%, var(--opanel-theme-1) 50%, var(--vp-c-bg) 100%);
 }
 
@@ -276,6 +294,15 @@ a .link-text-icon {
   line-height: 1.8;
   color: var(--vp-c-text-2);
   margin: 0;
+}
+
+.section-note {
+  font-size: 9pt;
+  line-height: 1.8;
+  color: var(--vp-c-text-2);
+  font-style: italic;
+  margin: 0;
+  margin-top: 10px;
 }
 
 .feature-openapi {
