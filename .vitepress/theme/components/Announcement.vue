@@ -1,7 +1,10 @@
 <template>
   <div class="announcement-container">
     <div class="announcement">
-      <h2>OPanel 2.0 现已发布 🎉</h2>
+      <h2>OPanel 2.1 现已发布 🎉</h2>
+      <a href="https://github.com/opanel-mc/opanel/releases/tag/2.1.0" target="_blank">
+        了解更多<span class="vpi-arrow-right link-text-icon"></span>
+      </a>
       <div class="announcement-features">
         <p>插件管理 背包编辑 MCP 服务器重启</p>
         <p>命令快捷方式 定时任务 全新UI界面</p>
@@ -11,6 +14,24 @@
 </template>
 
 <style scoped>
+
+a {
+  font-size: 10pt;
+  text-underline-offset: 4px;
+  z-index: 10;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a .link-text-icon {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-left: 2px;
+  vertical-align: middle;
+}
 
 .announcement-container {
   padding: 0 64px;
