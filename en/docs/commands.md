@@ -18,6 +18,10 @@ Enter this command to print the current status of OPanel.
 
 <<< @/snippets/opanel-status.ansi
 
+## `/opanel restart-server`
+
+Enter this command to restart the server using the [server launch command](/en/docs/restart-server) configured in OPanel.
+
 ## `/opanel start`
 
 This command is used to launch the OPanel web panel.

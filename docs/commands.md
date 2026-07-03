@@ -18,6 +18,10 @@ OPanel在游戏内注册了`/opanel`指令，指令格式如下：
 
 <<< @/snippets/opanel-status.ansi
 
+## `/opanel restart-server`
+
+输入该指令，使用OPanel面板中配置的[服务器启动指令](/docs/restart-server)来重启服务器。
+
 ## `/opanel start`
 
 该指令用于启动OPanel网页面板。
