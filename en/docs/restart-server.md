@@ -6,6 +6,16 @@ The OPanel restart feature is not recommended for servers running inside platfor
 
 :::
 
+## Prerequisites
+
+If your server is running on Linux, make sure `bash` is installed:
+
+```bash
+sudo apt install bash
+```
+
+## Configure
+
 1. Before using the server restart feature, first find your server launch command, for example:
 
 ![restart-server-1](/static/docs/restart-server-1.png)

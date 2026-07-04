@@ -6,6 +6,16 @@
 
 :::
 
+## 准备工作
+
+如果你的服务器是Linux系统，请确保服务器上已经安装`bash`：
+
+```bash
+sudo apt install bash
+```
+
+## 开始配置
+
 1. 使用服务器重启功能前，你需要先找到服务器的启动命令，如：
 
 ![restart-server-1](/static/docs/restart-server-1.png)
