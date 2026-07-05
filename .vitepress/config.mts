@@ -64,6 +64,10 @@ export default defineConfig({
               {
                 text: "连接到MCDR",
                 link: "mcdr-bridge"
+              },
+              {
+                text: "通过OIDC登录",
+                link: "oidc"
               }
             ]
           },
@@ -205,6 +209,10 @@ export default defineConfig({
                   {
                     text: "Connecting to MCDR",
                     link: "mcdr-bridge"
+                  },
+                  {
+                    text: "OIDC Login",
+                    link: "oidc"
                   }
                 ]
               },
