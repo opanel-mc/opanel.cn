@@ -1,35 +1,38 @@
-# Configuration
+# Configuration File
 
-The configuration file of OPanel is used to manage some global settings of the server panel.
+OPanel's configuration file is used to manage some global settings for the server panel.
 
-## File location
+## File Location
 
-The location of the configuration file varies depending on the server. You can refer to the list below to find the file:
+The location of the configuration file varies depending on the server type. You can refer to the list below to find it:
 
-- Bukkit servers: `/plugins/OPanel/config.yml`
-- Forge servers: `/config/opanel-common.toml`
-- Fabric servers: `/config/opanel.json` **(You must stop your Fabric server before modifying the configuration)**
+- Bukkit-based servers: `/plugins/OPanel/config.yml`
+- Forge-based servers: `/config/opanel-common.toml`
+- Fabric servers: `/config/opanel.json` **(Be sure to shut down the Fabric server before modifying the configuration)**
 
 ## Configuration Options
 
-|Key Name|Type|Description|Default Value|
-|---|:---:|---|:---:|
-|`accessKey`|`string`|Hash value of the panel access key||
-|`salt`|`string`|Salt used when generating tokens||
-|`webServerPort`|`int`|Web panel port|`3000`|
-|`cookieSecure`|`boolean`|Use HTTPS to encrypt Cookie transmission|`false`|
-|`proxyHeaders`|`boolean`|Use proxy headers to get real IP|`false`|
-|`oidcEnabled`|`boolean`|Enable OIDC login|`false`|
-|`oidcDiscoveryUrl`|`string`|OIDC Provider discovery URL||
-|`oidcClientId`|`string`|OIDC client ID||
-|`oidcClientSecret`|`string`|OIDC client secret||
-|`oidcDisplayName`|`string`|Display name for OIDC login||
+|Key|Type|Description|Default|Required|
+|---|:---:|---|:---:|:---:|
+|`accessKey`|`string`|Hashed value of the panel access key||√ (auto-generated)|
+|`salt`|`string`|Salt used when generating tokens||√ (auto-generated)|
+|`webServerHost`|`string`|Host address of the panel web server|`0.0.0.0`||
+|`webServerPort`|`int`|Port of the panel web server|`3000`|√|
+|`mcdrSocketPort`|`int`|Target port for MCDR|`25576`||
+|`cookieSecure`|`boolean`|Use HTTPS to transmit cookies securely|`false`||
+|`proxyHeaders`|`boolean`|Whether to trust proxy headers|`false`||
+|`oidcEnabled`|`boolean`|Whether to enable OIDC login|`false`||
+|`oidcDiscoveryUrl`|`string`|Discovery URL of the OIDC provider|||
+|`oidcClientId`|`string`|OIDC client ID|||
+|`oidcClientSecret`|`string`|OIDC client secret|||
+|`oidcDisplayName`|`string`|Display name shown for OIDC login|||
 
-:::warning 
+:::warning Note
 
-- `accessKey` stores the hash of the key, not the key itself. If the key is lost, please refer to the instructions in [Quick Start](./quick-start#usage) for key reset.
-- `cookieSecure` requires additional SSL certificate and reverse proxy configuration to enable HTTPS communication.
-- If you are using a reverse proxy, set `proxyHeaders` to `true` to obtain the correct IP address.
-- For `oidc` configuration details, refer to [Logging in via OIDC](./oidc#Configuration)
+- `accessKey` stores the hash of the key rather than the key itself. If you lose the key, refer to [Quick Start](./quick-start#usage) for reset instructions.
+- For `mcdrSocketPort`, see [Connecting to MCDR](./mcdr-bridge).
+- `cookieSecure` requires additional SSL certificate and reverse proxy configuration before HTTPS communication can be enabled.
+- If you are using a reverse proxy, set `proxyHeaders` to `true` so OPanel can obtain the correct IP address.
+- For `oidc`-related settings, see [Logging in via OIDC](./oidc#configuration).
 
 :::

@@ -12,19 +12,20 @@ OPanel的配置文件用于管理服务器面板全局的一些设置。
 
 ## 配置选项
 
-|键名|类型|介绍|默认值|
-|---|:---:|---|:---:|
-|`accessKey`|`string`|面板访问密钥的哈希值||
-|`salt`|`string`|生成token时使用的盐||
-|`webServerPort`|`int`|面板端口|`3000`|
-|`mcdrSocketPort`|`int`|MCDR目标端口|`25576`|
-|`cookieSecure`|`boolean`|使用HTTPS加密传输Cookie|`false`|
-|`proxyHeaders`|`boolean`|是否使用代理头|`false`|
-|`oidcEnabled`|`boolean`|是否启用OIDC登录|`false`|
-|`oidcDiscoveryUrl`|`string`|OIDC Provider的服务发现地址||
-|`oidcClientId`|`string`|OIDC客户端ID||
-|`oidcClientSecret`|`string`|OIDC客户端密钥||
-|`oidcDisplayName`|`string`|OIDC登录显示名称||
+|键名|类型|介绍|默认值|必填|
+|---|:---:|---|:---:|:---:|
+|`accessKey`|`string`|面板访问密钥的哈希值||√（自动生成）|
+|`salt`|`string`|生成token时使用的盐||√（自动生成）|
+|`webServerHost`|`string`|面板主机|`0.0.0.0`||
+|`webServerPort`|`int`|面板端口|`3000`|√|
+|`mcdrSocketPort`|`int`|MCDR目标端口|`25576`||
+|`cookieSecure`|`boolean`|使用HTTPS加密传输Cookie|`false`||
+|`proxyHeaders`|`boolean`|是否使用代理头|`false`||
+|`oidcEnabled`|`boolean`|是否启用OIDC登录|`false`||
+|`oidcDiscoveryUrl`|`string`|OIDC Provider的服务发现地址|||
+|`oidcClientId`|`string`|OIDC客户端ID|||
+|`oidcClientSecret`|`string`|OIDC客户端密钥|||
+|`oidcDisplayName`|`string`|OIDC登录显示名称|||
 
 :::warning 注意
 
