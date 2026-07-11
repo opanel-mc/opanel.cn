@@ -19,11 +19,17 @@ The location of the configuration file varies depending on the server. You can r
 |`webServerPort`|`int`|Web panel port|`3000`|
 |`cookieSecure`|`boolean`|Use HTTPS to encrypt Cookie transmission|`false`|
 |`proxyHeaders`|`boolean`|Use proxy headers to get real IP|`false`|
+|`oidcEnabled`|`boolean`|Enable OIDC login|`false`|
+|`oidcDiscoveryUrl`|`string`|OIDC Provider discovery URL||
+|`oidcClientId`|`string`|OIDC client ID||
+|`oidcClientSecret`|`string`|OIDC client secret||
+|`oidcDisplayName`|`string`|Display name for OIDC login||
 
 :::warning 
 
 - `accessKey` stores the hash of the key, not the key itself. If the key is lost, please refer to the instructions in [Quick Start](./quick-start#usage) for key reset.
 - `cookieSecure` requires additional SSL certificate and reverse proxy configuration to enable HTTPS communication.
 - If you are using a reverse proxy, set `proxyHeaders` to `true` to obtain the correct IP address.
+- For `oidc` configuration details, refer to [Logging in via OIDC](./oidc#Configuration)
 
 :::
