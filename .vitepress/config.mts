@@ -110,9 +110,18 @@ export default defineConfig({
       "/wiki/": {
         base: "/wiki/",
         items: [
-          { text: "捐助说明", link: "donation" },
-          { text: "项目组管理手册", link: "admin-handbook" },
-          { text: "项目迭代流程", link: "iteration" },
+          {
+            items: [
+              { text: "定时任务命令语法指南", link: "task-command" }
+            ]
+          },
+          {
+            items: [
+              { text: "捐助说明", link: "donation" },
+              { text: "项目组管理手册", link: "admin-handbook" },
+              { text: "项目迭代流程", link: "iteration" },
+            ]
+          }
         ]
       }
     },
