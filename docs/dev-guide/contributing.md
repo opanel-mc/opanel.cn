@@ -36,10 +36,10 @@ opanel
 │   ├── neoforge-helper
 │   ├── neoforge-1.21.1
 │   └── ...
-└── bukkit/
-    ├── bukkit-helper
-    ├── spigot-1.16.1
-    ├── spigot-1.20
+└── paper/
+    ├── paper-helper
+    ├── paper-1.16.1
+    ├── paper-1.20
     ├── folia-1.20
     └── ...
 ```
@@ -56,9 +56,9 @@ opanel
 - `neoforge` 文件夹按版本存放所有NeoForge相关的适配模块：
   - `neoforge-helper` 存放NeoForge服务端适配模块的共用代码。
   - 以 `neoforge-` 开头并附带版本号的文件夹是不同Minecraft版本的NeoForge模组实现。
-- `bukkit` 文件夹按版本存放所有Bukkit系列（Spigot、Folia）的适配模块：
-  - `bukkit-helper` 存放Bukkit系列服务端适配模块的共用代码。
-  - 以 `spigot-` 开头的文件夹是不同Minecraft版本的Bukkit插件实现。
+- `paper` 文件夹按版本存放所有Paper系列（Paper、Folia）的适配模块：
+  - `paper-helper` 存放Paper系列服务端适配模块的共用代码。
+  - 以 `paper-` 开头的文件夹是不同Minecraft版本的Paper插件实现。
   - 以 `folia-` 开头的文件夹是不同Minecraft版本的Folia插件实现。
 
 在插件 / 模组初始化后，程序会在指定端口（默认为`3000`）启动一个Web服务器，该服务器包括前端和后端API。
@@ -107,7 +107,7 @@ npm install
 
 ### 服务端功能 / 后端API
 
-提前准备一个Fabric / Forge / NeoForge / Bukkit的服务端用于测试，然后按照下面的指南来构建一个jar包，接着将要调试的jar包放进对应的`mods`或`plugins`文件夹。在重启服务器后，最新的更改将会应用到你的测试服务器上。
+提前准备一个Fabric / Forge / NeoForge / Paper的服务端用于测试，然后按照下面的指南来构建一个jar包，接着将要调试的jar包放进对应的`mods`或`plugins`文件夹。在重启服务器后，最新的更改将会应用到你的测试服务器上。
 
 #### 适配新版本
 

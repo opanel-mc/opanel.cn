@@ -6,7 +6,7 @@ OPanel's configuration file is used to manage some global settings for the serve
 
 The location of the configuration file varies depending on the server type. You can refer to the list below to find it:
 
-- Bukkit-based servers: `/plugins/OPanel/config.yml`
+- Paper-series servers: `/plugins/OPanel/config.yml`
 - Forge-based servers: `/config/opanel-common.toml`
 - Fabric servers: `/config/opanel.json` **(Be sure to shut down the Fabric server before modifying the configuration)**
 

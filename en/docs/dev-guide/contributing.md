@@ -36,10 +36,10 @@ opanel
 │   ├── neoforge-helper
 │   ├── neoforge-1.21.1
 │   └── ...
-└── bukkit/
-    ├── bukkit-helper
-    ├── spigot-1.16.1
-    ├── spigot-1.20
+└── paper/
+    ├── paper-helper
+    ├── paper-1.16.1
+    ├── paper-1.20
     ├── folia-1.20
     └── ...
 ```
@@ -56,9 +56,9 @@ opanel
 - The `neoforge` folder contains all NeoForge-related adaptation modules organized by version:
   - `neoforge-helper` contains the shared code of NeoForge implementation modules.
   - Folders starting with `neoforge-` followed by a version number are NeoForge implementations for different Minecraft versions.
-- The `bukkit` folder contains all Bukkit-series (Spigot, Folia) adaptation modules organized by version:
-  - `bukkit-helper` contains the shared code of Bukkit series implementation modules.
-  - Folders starting with `spigot-` are Bukkit implementations for different versions of Minecraft.
+- The `paper` folder contains all Paper-series (Paper, Folia) adaptation modules organized by version:
+  - `paper-helper` contains the shared code of Paper series implementation modules.
+  - Folders starting with `paper-` are Paper implementations for different versions of Minecraft.
   - Folders starting with `folia-` are Folia implementations for different versions of Minecraft.
 
 After the plugin / mod is initialized, the program will start a web server on the specified port (default is `3000`), which includes both the frontend and backend APIs.
@@ -107,7 +107,7 @@ npm install
 
 ### Server-side functionality / Backend API
 
-Prepare a Fabric / Forge / NeoForge / Bukkit server in advance for testing, then follow the guide below to build a jar file. Next, place the jar file you want to debug into the corresponding `mods` or `plugins` folder. After restarting the server, the latest changes will be applied to your test server.
+Prepare a Fabric / Forge / NeoForge / Paper server in advance for testing, then follow the guide below to build a jar file. Next, place the jar file you want to debug into the corresponding `mods` or `plugins` folder. After restarting the server, the latest changes will be applied to your test server.
 
 #### Adapt the new version
 

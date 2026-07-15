@@ -28,7 +28,7 @@ outline: "deep"
 
 :::warning 注意
 
-如果适配的服务端是Bukkit，那么在服务端一栏应该填`spigot`，如：`spigot-1.20`。Spigot和Folia模块都应放在`bukkit`文件夹下。
+Paper和Folia模块都应放在`paper`文件夹下。
 
 :::
 

@@ -7,8 +7,6 @@ import VPButton from "vitepress/dist/client/theme-default/components/VPButton.vu
   <div class="features-container">
     <section class="feature-multiplatform">
       <div class="platform-bg" aria-hidden="true">
-        <img src="/static/assets/platforms/bukkit.png" class="logo logo-bukkit" alt=""/>
-        <img src="/static/assets/platforms/spigot.png" class="logo logo-spigot" alt=""/>
         <img src="/static/assets/platforms/paper.svg" class="logo logo-paper" alt=""/>
         <img src="/static/assets/platforms/leaves.svg" class="logo logo-leaves" alt=""/>
         <img src="/static/assets/platforms/fabric.svg" class="logo logo-fabric" alt=""/>
@@ -18,7 +16,7 @@ import VPButton from "vitepress/dist/client/theme-default/components/VPButton.vu
       <div class="platform-content">
         <h2 class="platform-title">Multi-platform Support</h2>
         <p class="platform-subtitle">
-          As a server-side plugin / mod, OPanel supports multiple Minecraft versions on several mainstream server platforms, including Bukkit, Spigot, Paper, Folia, Fabric, Forge and NeoForge.
+          As a server-side plugin / mod, OPanel supports multiple Minecraft versions on several mainstream server platforms, including Paper, Folia, Fabric, Forge and NeoForge.
         </p>
         <p>
           <a href="/en/docs/versions">

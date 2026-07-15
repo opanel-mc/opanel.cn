@@ -1,4 +1,4 @@
-|       |Bukkit|Fabric|Forge|NeoForge|Folia|
+|       |Paper|Fabric|Forge|NeoForge|Folia|
 |-------|:----:|:----:|:---:|:------:|:---:|
 |26.2   |√     |√     |√    |        |     |
 |26.1.2 |√     |√     |√    |        |√    |

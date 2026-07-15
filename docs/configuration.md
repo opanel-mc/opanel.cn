@@ -6,7 +6,7 @@ OPanel的配置文件用于管理服务器面板全局的一些设置。
 
 配置文件的位置因不同服务端而不同，可以参考下面的列表来查找该文件：
 
-- Bukkit系服务端：`/plugins/OPanel/config.yml`
+- Paper系服务端：`/plugins/OPanel/config.yml`
 - Forge系服务端：`/config/opanel-common.toml`
 - Fabric服务端：`/config/opanel.json` **(修改配置时一定要先关闭Fabric服务器)**
 
