@@ -3,6 +3,8 @@
 The versions marked below with `√` are adapted, tested and available.
 
 > The `Paper` platform here refers to the Paper-series servers, including Paper, Leaves and etc.
+>
+> OPanel no longer supports CraftBukkit or Spigot. The former Bukkit versions has been fully migrated to Paper.
 
 :::info
 

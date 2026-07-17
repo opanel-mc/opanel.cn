@@ -3,6 +3,8 @@
 下面用`√`标出的版本是经过适配和测试，且可用的版本。
 
 > 此处的`Paper`平台指Paper系服务端，包括Paper、Leaves等服务端
+>
+> OPanel已不再支持CraftBukkit与Spigot，原Bukkit端已全面迁移至Paper端
 
 :::info
 
