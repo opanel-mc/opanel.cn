@@ -2,7 +2,9 @@
 
 下面用`√`标出的版本是经过适配和测试，且可用的版本。
 
-> 此处的`Bukkit`平台指广义上的Bukkit服务端，包括Paper、Spigot、Craftbukkit、Leaves等服务端
+> 此处的`Paper`平台指Paper系服务端，包括Paper、Leaves等服务端
+>
+> OPanel已不再支持CraftBukkit与Spigot，原Bukkit端已全面迁移至Paper端
 
 :::info
 
@@ -14,7 +16,7 @@ jar包名称中的“游戏版本”指的是该jar包所支持的**最低版本
 
 OPanel所支持的Fabric Loader版本最低为`0.16.14`（Minecraft版本`1.21.11`及以上为`0.17.3`），NeoForge版本最低为`21.1.217`
 
-OPanel的Bukkit 1.16.x版本需要java版本`>=14`方可正常运行
+OPanel的Paper 1.16.x版本需要java版本`>=14`方可正常运行
 
 :::
 

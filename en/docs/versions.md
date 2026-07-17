@@ -2,7 +2,9 @@
 
 The versions marked below with `√` are adapted, tested and available.
 
-> The `Bukkit` platform here refers to the Bukkit servers in a broad sense, including Paper, Spigot, Craftbukkit, Leaves and etc.
+> The `Paper` platform here refers to the Paper-series servers, including Paper, Leaves and etc.
+>
+> OPanel no longer supports CraftBukkit or Spigot. The former Bukkit versions has been fully migrated to Paper.
 
 :::info
 
@@ -16,7 +18,7 @@ The minimum Fabric Loader version supported by OPanel is `0.16.14` (`0.17.3` for
 
 The minimum NeoForge version supported by OPanel is `21.1.217`.
 
-The Bukkit 1.16.x version of OPanel requires Java version `>=14` to run properly.
+The Paper 1.16.x version of OPanel requires Java version `>=14` to run properly.
 
 :::
 

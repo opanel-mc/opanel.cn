@@ -23,7 +23,7 @@ You can check the server platforms and game versions currently supported by OPan
 
 Move the downloaded jar file into the corresponding plugins / mods folder, and after starting the server, the installation is done.
 
-- Bukkit server: `plugins` folder
+- Paper servers: `plugins` folder
 - Forge and Fabric servers: `mods` folder
 
 :::warning
@@ -32,7 +32,7 @@ The minimum Fabric Loader version supported by OPanel is `0.16.14` (`0.17.3` for
 
 The minimum NeoForge version supported by OPanel is `21.1.217`.
 
-The Bukkit 1.16.x version of OPanel requires Java version `>=14` to run properly.
+The Paper 1.16.x version of OPanel requires Java version `>=14` to run properly.
 
 :::
 

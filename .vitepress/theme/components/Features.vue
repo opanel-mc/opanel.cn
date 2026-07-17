@@ -7,8 +7,6 @@ import VPButton from "vitepress/dist/client/theme-default/components/VPButton.vu
   <div class="features-container">
     <section class="feature-multiplatform">
       <div class="platform-bg" aria-hidden="true">
-        <img src="/static/assets/platforms/bukkit.png" class="logo logo-bukkit" alt=""/>
-        <img src="/static/assets/platforms/spigot.png" class="logo logo-spigot" alt=""/>
         <img src="/static/assets/platforms/paper.svg" class="logo logo-paper" alt=""/>
         <img src="/static/assets/platforms/leaves.svg" class="logo logo-leaves" alt=""/>
         <img src="/static/assets/platforms/fabric.svg" class="logo logo-fabric" alt=""/>
@@ -18,7 +16,7 @@ import VPButton from "vitepress/dist/client/theme-default/components/VPButton.vu
       <div class="platform-content">
         <h2 class="platform-title">多平台支持</h2>
         <p class="platform-subtitle">
-          作为服务端插件 / 模组，OPanel支持多个主流服务端平台的多个Minecraft版本，包括Bukkit、Fabric、Forge和NeoForge。
+          作为服务端插件 / 模组，OPanel支持多个主流服务端平台的多个Minecraft版本，包括Paper、Folia、Fabric、Forge和NeoForge。
         </p>
         <p>
           <a href="/docs/versions">

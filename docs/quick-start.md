@@ -23,14 +23,14 @@ jar包名称中的“游戏版本”指的是该jar包所支持的**最低版本
 
 将下载好的jar包移入对应的插件 / 模组文件夹，启动服务器后即为安装成功。
 
-- Bukkit系服务端：`plugins`文件夹
+- Paper系服务端：`plugins`文件夹
 - Forge系、Fabric系服务端：`mods`文件夹
 
 :::warning 注意
 
 OPanel所支持的Fabric Loader版本最低为`0.16.14`（Minecraft版本`1.21.11`及以上为`0.17.3`），NeoForge版本最低为`21.1.217`
 
-OPanel的Bukkit 1.16.x版本需要java版本`>=14`方可正常运行
+OPanel的Paper 1.16.x版本需要java版本`>=14`方可正常运行
 
 :::
 

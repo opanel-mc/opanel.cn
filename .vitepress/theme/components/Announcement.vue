@@ -1,14 +1,20 @@
 <template>
   <div class="announcement-container">
     <div class="announcement">
-      <h2>OPanel 2.1 现已发布 🎉</h2>
-      <a href="https://github.com/opanel-mc/opanel/releases/tag/2.1.0" target="_blank">
+      <h2>OPanel 2.2 即将发布</h2>
+      <!-- <a href="https://github.com/opanel-mc/opanel/releases/tag/2.1.0" target="_blank">
         了解更多<span class="vpi-arrow-right link-text-icon"></span>
-      </a>
+      </a> -->
       <div class="announcement-features">
-        <p>插件管理 背包编辑 MCP 服务器重启</p>
-        <p>命令快捷方式 定时任务 全新UI界面</p>
+        <p>监控页面 定时任务脚本</p>
+        <p>末影箱编辑 玩家日活</p>
       </div>
+    </div>
+    <div class="notice">
+      <p>
+        <b>OPanel将在下一个正式版取消对CraftBukkit与Spigot的支持</b><br>
+        原Bukkit端适配全面迁移至Paper端
+      </p>
     </div>
   </div>
 </template>
@@ -34,20 +40,28 @@ a .link-text-icon {
 }
 
 .announcement-container {
+  max-width: 1152px;
+  margin: 0 auto;
   padding: 0 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 
-.announcement-container .announcement {
+.announcement-container > * {
   position: relative;
-  margin: 20px auto;
-  max-width: 1152px;
-  background-color: var(--opanel-announcement-bg);
+  width: 100%;
   border-radius: 8px;
   padding: 20px 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
+}
+
+.announcement-container .announcement {
+  background-color: var(--opanel-announcement-bg);
 }
 
 .announcement-container .announcement h2 {
@@ -74,8 +88,8 @@ a .link-text-icon {
   user-select: none;
 }
 
-.announcement-container .announcement .announcement-features p:nth-child(1) {
-  margin-left: 70px;
+.announcement-container .announcement .announcement-features p:nth-child(2) {
+  margin-left: 50px;
 }
 
 @media screen and (max-width: 520px) {
@@ -93,6 +107,11 @@ a .link-text-icon {
   .announcement-container .announcement .announcement-features {
     display: none;
   }
+}
+
+.announcement-container .notice {
+  background-color: var(--vp-c-warning-soft);
+  font-size: 10pt;
 }
 
 </style>

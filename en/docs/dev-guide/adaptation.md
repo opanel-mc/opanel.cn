@@ -27,7 +27,7 @@ Below, we will use adapting to Fabric 1.20.4 as an example to explain how to ada
 
 :::warning Note
 
-If the compatible server is Bukkit, then you should enter `spigot` in the server column, for example: `spigot-1.20`. Both Spigot and Folia modules should be placed under the `bukkit` folder.
+Both Paper and Folia modules should be placed under the `paper` folder.
 
 :::
 
