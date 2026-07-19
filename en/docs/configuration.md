@@ -19,6 +19,9 @@ The location of the configuration file varies depending on the server type. You 
 |`webServerHost`|`string`|Host address of the panel web server|`0.0.0.0`||
 |`webServerPort`|`int`|Port of the panel web server|`3000`|√|
 |`mcdrSocketPort`|`int`|Target port for MCDR|`25576`||
+|`mapPrerenderConcurrent`|`int`|Number of concurrent map pre-rendering threads|`4`||
+|`monitorSnapshotInterval`|`int`|Monitor snapshot refresh interval (ms)|`1000`||
+|`serverRestartDelay`|`int`|Wait time before restarting the server (s)|`10`||
 |`cookieSecure`|`boolean`|Use HTTPS to transmit cookies securely|`false`||
 |`proxyHeaders`|`boolean`|Whether to trust proxy headers|`false`||
 |`oidcEnabled`|`boolean`|Whether to enable OIDC login|`false`||

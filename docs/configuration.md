@@ -19,6 +19,9 @@ OPanel的配置文件用于管理服务器面板全局的一些设置。
 |`webServerHost`|`string`|面板主机|`0.0.0.0`||
 |`webServerPort`|`int`|面板端口|`3000`|√|
 |`mcdrSocketPort`|`int`|MCDR目标端口|`25576`||
+|`mapPrerenderConcurrent`|`int`|地图预渲染线程数|`4`||
+|`monitorSnapshotInterval`|`int`|监控快照刷新时间间隔（毫秒）|`1000`||
+|`serverRestartDelay`|`int`|服务器重启等待时间（秒）|`10`||
 |`cookieSecure`|`boolean`|使用HTTPS加密传输Cookie|`false`||
 |`proxyHeaders`|`boolean`|是否使用代理头|`false`||
 |`oidcEnabled`|`boolean`|是否启用OIDC登录|`false`||
