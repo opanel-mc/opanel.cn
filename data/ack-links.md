@@ -1,1 +1,2 @@
 - DLC Manager: <https://curseforge.com/minecraft/mc-mods/dlc-manager>
+- snbt.js: <https://github.com/myworldzycpc/snbt-js>

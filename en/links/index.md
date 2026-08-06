@@ -14,6 +14,6 @@ Thanks to the following cloud server providers for their support of this project
 
 <!--@include: @/data/sponsor-links.md-->
 
-## Cooperation Links
+## Acknowledgments Links
 
-<!--@include: @/data/coop-links.md-->
+<!--@include: @/data/ack-links.md-->

@@ -14,6 +14,6 @@
 
 <!--@include: @/data/sponsor-links.md-->
 
-## 合作友链
+## 鸣谢友链
 
-<!--@include: @/data/coop-links.md-->
+<!--@include: @/data/ack-links.md-->
