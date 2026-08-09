@@ -7,7 +7,7 @@
       </a> -->
       <div class="announcement-features">
         <p>监控页面 定时任务脚本</p>
-        <p>末影箱编辑 玩家日活</p>
+        <p>末影箱编辑 玩家日活 扩展系统</p>
       </div>
     </div>
     <div class="notice">
