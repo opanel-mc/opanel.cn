@@ -103,6 +103,10 @@
 :root {
   --vp-nav-bg-color: #ffffffbd;
   --vp-nav-backdrop-filter: blur(10px);
+  --vp-local-nav-bg-color: var(--vp-nav-bg-color);
+  --vp-local-nav-backdrop-filter: var(--vp-nav-backdrop-filter);
+  --vp-backdrop-bg-color: rgba(255, 255, 255, .6);
+
   .VPNavBar {
     backdrop-filter: var(--vp-nav-backdrop-filter);
     border-bottom: 0 !important;
@@ -111,12 +115,16 @@
     }
   }
   .VPLocalNav {
-    display: none;
+    backdrop-filter: var(--vp-local-nav-backdrop-filter);
+  }
+  .VPBackdrop {
+    backdrop-filter: blur(10px);
   }
 }
 
 .dark {
   --vp-nav-bg-color: #0c0c0cbd;
+  --vp-backdrop-bg-color: rgba(0, 0, 0, .6);
 }
 
 /**
@@ -254,6 +262,8 @@
 
 .VPSidebar {
   background-color: transparent !important;
+  padding-top: 0 !important;
+  margin-top: var(--vp-nav-height);
   .curtain {
     background-color: transparent;
   }
