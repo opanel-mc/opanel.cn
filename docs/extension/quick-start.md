@@ -7,6 +7,14 @@
 - 部署 OPanel，版本为`2.2.0-pre5`及以上（参见[快速开始](/docs/quick-start.md)文档）
 - 准备 Java 环境（JDK 14+），安装 [Intellij IDEA](https://jetbrains.com/idea)
 
+### 可选：使用AI Agent开发扩展
+
+如果你想使用AI Agent来快速开发一个OPanel扩展，也可以安装使用OPanel提供的[Agent Skill](https://agentskills.io/home)。
+
+```shell
+npx skills add opanel-mc/opanel
+```
+
 ## 创建新项目
 
 打开IDEA，点击“新建项目”，选择“Gradle”，点击“创建”。

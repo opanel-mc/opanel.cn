@@ -7,6 +7,14 @@ This tutorial will help you get started with OPanel extension development and cr
 - Deploy OPanel `2.2.0-pre5` or later (see the [Quick Start](/en/docs/quick-start) guide)
 - Set up a Java development environment (JDK 14+) and install [IntelliJ IDEA](https://jetbrains.com/idea)
 
+### Optional: Develop with AI Agents
+
+If you want to use an AI agent to quickly develop an OPanel extension, you can install the [Agent Skill](https://agentskills.io/home) provided by OPanel.
+
+```shell
+npx skills add opanel-mc/opanel
+```
+
 ## Create a New Project
 
 Open IntelliJ IDEA, click **New Project**, select **Gradle**, and click **Create**.
