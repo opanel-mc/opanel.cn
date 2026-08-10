@@ -249,6 +249,32 @@ export default defineConfig({
                 ]
               },
               {
+                text: "Extension Development",
+                base: "/en/docs/extension/",
+                items: [
+                  {
+                    text: "Quick Start",
+                    link: "quick-start"
+                  },
+                  {
+                    text: "extension.json",
+                    link: "extension-json"
+                  },
+                  {
+                    text: "Event Listeners",
+                    link: "events"
+                  },
+                  {
+                    text: "Frontend Pages",
+                    link: "frontend"
+                  },
+                  {
+                    text: "Backend API",
+                    link: "backend"
+                  }
+                ]
+              },
+              {
                 text: "Development",
                 base: "/en/docs/dev-guide/",
                 items: [
