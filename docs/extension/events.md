@@ -7,7 +7,7 @@ OPanel允许扩展插件注册事件监听器，来监听OPanel或游戏内的�
 
 ## 注册监听器
 
-OPanel所支持的事件类型可以在`net.opanel.api.event`包下查看，除`ExtensionEvent`以外的其他类均为事件。
+OPanel所支持的事件类型可以在`cn.opanel.api.event`包下查看，除`ExtensionEvent`以外的其他类均为事件。
 
 目前OPanel仅支持在主类（即添加了`@Extension`注解的类）中添加监听器，添加方式如下：
 

@@ -18,8 +18,8 @@ dependencies {
 通过OPanel API注册接口，注册方式如下：
 
 ```java
+import cn.opanel.api.*;
 import io.javalin.http.HandlerType;
-import net.opanel.api.*;
 
 @Extension
 public class Main {

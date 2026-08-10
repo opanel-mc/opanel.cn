@@ -19,7 +19,7 @@ repositories {
 }
 
 dependencies {
-  compileOnly ''
+  compileOnly 'cn.opanel:opanel-api:<OPanel版本号>'
 }
 
 java {
@@ -33,8 +33,8 @@ java {
 
 ```kts
 dependencies {
+  // ...
   compileOnly 'io.javalin:javalin:5.6.4'
-  compileOnly ''
 }
 ```
 
@@ -51,7 +51,7 @@ dependencies {
 ```java
 package com.example.extension;
 
-import net.opanel.api.*;
+import cn.opanel.api.*;
 
 @Extension
 public class Main {
