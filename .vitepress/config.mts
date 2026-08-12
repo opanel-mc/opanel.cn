@@ -51,6 +51,10 @@ export default defineConfig({
             link: "faq"
           },
           {
+            text: "平台与版本支持",
+            link: "versions"
+          },
+          {
             text: "配置",
             items: [
               {
@@ -72,18 +76,6 @@ export default defineConfig({
             ]
           },
           {
-            items: [
-              {
-                text: "平台与版本支持",
-                link: "versions"
-              },
-              {
-                text: "项目组成员",
-                link: "project-members"
-              },
-            ]
-          },
-          {
             text: "云服务商指南",
             base: "/docs/platforms/",
             items: [
@@ -98,11 +90,38 @@ export default defineConfig({
             ]
           },
           {
+            text: "扩展开发",
+            base: "/docs/extension/",
+            items: [
+              {
+                text: "快速入门",
+                link: "quick-start"
+              },
+              {
+                text: "extension.json",
+                link: "extension-json"
+              },
+              {
+                text: "事件监听",
+                link: "events"
+              },
+              {
+                text: "前端页面",
+                link: "frontend"
+              },
+              {
+                text: "后端接口",
+                link: "backend"
+              }
+            ]
+          },
+          {
             text: "开发指南",
             base: "/docs/dev-guide/",
             items: [
               { text: "贡献指南", link: "contributing" },
               { text: "适配指南", link: "adaptation" },
+              { text: "项目组成员", link: "project-members" },
             ]
           },
         ]
@@ -205,6 +224,10 @@ export default defineConfig({
                 link: "faq"
               },
               {
+                text: "Platform and Version Support",
+                link: "versions"
+              },
+              {
                 text: "References",
                 items: [
                   {
@@ -226,15 +249,29 @@ export default defineConfig({
                 ]
               },
               {
+                text: "Extension Development",
+                base: "/en/docs/extension/",
                 items: [
                   {
-                    text: "Platform and Version Support",
-                    link: "versions"
+                    text: "Quick Start",
+                    link: "quick-start"
                   },
                   {
-                    text: "Project Members",
-                    link: "project-members"
+                    text: "extension.json",
+                    link: "extension-json"
                   },
+                  {
+                    text: "Event Listeners",
+                    link: "events"
+                  },
+                  {
+                    text: "Frontend Pages",
+                    link: "frontend"
+                  },
+                  {
+                    text: "Backend API",
+                    link: "backend"
+                  }
                 ]
               },
               {
@@ -243,6 +280,7 @@ export default defineConfig({
                 items: [
                   { text: "Contributing Guidelines", link: "contributing" },
                   { text: "Adaptation Guidelines", link: "adaptation" },
+                  { text: "Project Members", link: "project-members" },
                 ]
               },
             ]
