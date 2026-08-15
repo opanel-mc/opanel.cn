@@ -3,7 +3,6 @@
 |成员||链接|
 |---|---|---|
 |**Norcleeh**|负责人 / 开发 / 测试|[Github](https://github.com/NriotHrreion) [个人主页](https://nocp.space)|
-|**HUGO**|开发 / 运维|[Github](https://github.com/HUGO123-yg)|
 |**Deed**|测试 / Logo设计|[Github](https://github.com/henlowornd) [个人主页](https://henlo.cc)|
 |**nikita**|翻译|[Github](https://github.com/7884857)|
 |**xiaoyangcc**|开发|[Github](https://github.com/xiaoyangcc159)|
