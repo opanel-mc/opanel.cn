@@ -1,1 +1,3 @@
 - 世外桃源休闲养老服：[http://zako.我喜欢你.top](http://zako.xn--6qqu5mlulk7i.top)
+- 牢废物的博客：<https://www.io.hk.cn>
+- AI人生重开：<https://ai.baka.asia>
