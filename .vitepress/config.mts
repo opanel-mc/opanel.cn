@@ -18,6 +18,11 @@ export default defineConfig({
     ["script", {}, baiduAnalyticsScript]
   ],
   cleanUrls: true,
+  lastUpdated: true,
+  sitemap: {
+    hostname: "https://opanel.cn"
+  },
+  srcExclude: ["data/**"],
   themeConfig: {
     logo: "/static/logo.svg",
 
