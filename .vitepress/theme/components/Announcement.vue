@@ -1,7 +1,7 @@
 <template>
   <div class="announcement-container">
     <div class="announcement">
-      <h2>OPanel 2.2 即将发布</h2>
+      <h2>OPanel 2.2 已发布</h2>
       <!-- <a href="https://github.com/opanel-mc/opanel/releases/tag/2.1.0" target="_blank">
         了解更多<span class="vpi-arrow-right link-text-icon"></span>
       </a> -->
@@ -12,7 +12,7 @@
     </div>
     <div class="notice">
       <p>
-        <b>OPanel将在下一个正式版取消对CraftBukkit与Spigot的支持</b><br>
+        <b>OPanel已取消对CraftBukkit与Spigot的支持</b><br>
         原Bukkit端适配全面迁移至Paper端
       </p>
     </div>
