@@ -12,7 +12,7 @@
     </div>
     <div class="notice">
       <p>
-        <b>OPanel已取消对CraftBukkit与Spigot的支持</b><br>
+        <b>OPanel已取消对CraftBukkit与Spigot的支持，且即将取消对Paper 1.16.x的支持</b><br>
         原Bukkit端适配全面迁移至Paper端
       </p>
     </div>
