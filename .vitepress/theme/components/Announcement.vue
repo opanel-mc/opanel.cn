@@ -12,8 +12,8 @@
     </div>
     <div class="notice">
       <p>
-        <b>OPanel已取消对CraftBukkit与Spigot的支持，且即将取消对Paper 1.16.x的支持</b><br>
-        原Bukkit端适配全面迁移至Paper端
+        <b>OPanel即将在下一个正式版取消对Paper 1.16.x的支持</b><br>
+        支持Paper 1.16.x的最后一个版本为OPanel 2.0.0，且需Java 14以上的版本才能运行
       </p>
     </div>
   </div>
