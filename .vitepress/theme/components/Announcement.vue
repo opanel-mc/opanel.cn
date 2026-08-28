@@ -2,9 +2,9 @@
   <div class="announcement-container">
     <div class="announcement">
       <h2>OPanel 2.2 已发布</h2>
-      <!-- <a href="https://github.com/opanel-mc/opanel/releases/tag/2.1.0" target="_blank">
+      <a href="https://github.com/opanel-mc/opanel/releases/tag/2.2.0" target="_blank">
         了解更多<span class="vpi-arrow-right link-text-icon"></span>
-      </a> -->
+      </a>
       <div class="announcement-features">
         <p>监控页面 定时任务脚本</p>
         <p>末影箱编辑 玩家日活 扩展系统</p>
