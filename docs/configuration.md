@@ -21,6 +21,10 @@ OPanel的配置文件用于管理服务器面板全局的一些设置。
 |`mcdrSocketPort`|`int`|MCDR目标端口|`25576`||
 |`mapPrerenderConcurrent`|`int`|地图预渲染线程数|`4`||
 |`monitorSnapshotInterval`|`int`|监控快照刷新时间间隔（毫秒）|`1000`||
+|`monitorHistoryEnabled`|`boolean`|是否启用监控历史记录|`true`||
+|`monitorHistoryMinuteRetentionDays`|`int`|1分钟粒度监控历史数据的保留天数（1–30天）|`7`||
+|`monitorHistoryQuarterHourRetentionDays`|`int`|15分钟粒度监控历史数据的保留天数（1–365天）|`90`||
+|`monitorHistoryHourlyRetentionDays`|`int`|1小时粒度监控历史数据的保留天数（1–3650天）|`365`||
 |`serverRestartDelay`|`int`|服务器重启等待时间（秒）|`10`||
 |`cookieSecure`|`boolean`|使用HTTPS加密传输Cookie|`false`||
 |`proxyHeaders`|`boolean`|是否使用代理头|`false`||
@@ -28,12 +32,13 @@ OPanel的配置文件用于管理服务器面板全局的一些设置。
 |`oidcDiscoveryUrl`|`string`|OIDC Provider的服务发现地址|||
 |`oidcClientId`|`string`|OIDC客户端ID|||
 |`oidcClientSecret`|`string`|OIDC客户端密钥|||
-|`oidcDisplayName`|`string`|OIDC登录显示名称|||
+|`oidcDisplayName`|`string`|OIDC登录显示名称|`OIDC`||
 
 :::warning 注意
 
 - `accessKey`存储的是密钥的哈希值，而非密钥本身。若丢失密钥，请参照[快速开始](./quick-start#使用)中的说明进行密钥重置。
 - `mcdrSocketPort`的配置请参见[连接到MCDR](./mcdr-bridge)
+- 监控历史数据的保留天数超出上述范围时会自动调整到范围内；15分钟粒度的保留天数不会小于1分钟粒度，1小时粒度的保留天数不会小于15分钟粒度，设置过小时会自动提高到前者的值。
 - `cookieSecure`需要额外配置SSL证书与反向代理才能实现HTTPS加密通信。
 - `proxyHeaders`如果您使用了反向代理，请将此选项设置为`true`以便获取正确的IP地址。
 - `oidc`相关配置请参照[通过OIDC登录](./oidc#开始配置)
