@@ -3,6 +3,9 @@
 > [!info]
 > 在简幻欢中使用OPanel并不违反[简幻欢服务协议](https://yuque.com/simpfun/sfe/tos)，请放心使用。
 
+> [!tip]
+> 近期经常有用户反馈无法在简幻欢面板服上打开OPanel面板，如果遇到类似问题，请优先求助简幻欢客服。
+
 1. 进入简幻欢面板，在`控制台 > 实例 > 管理`页面中找到“实例端口”选项，点击“新建”。
 
 ![simpfun-1](/static/docs/simpfun-1.png)
