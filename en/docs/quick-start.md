@@ -19,6 +19,12 @@ The 'game version' in the jar package name refers to the **minimum version** sup
 
 You can check the server platforms and game versions currently supported by OPanel on the [Platform and Version Support](/en/docs/versions) page.
 
+:::warning Pumpkin Version Compatibility
+
+Before using the Pumpkin version of OPanel, be sure to check the [Pumpkin Server Version Compatibility Table](/en/docs/versions#pumpkin-versions) to confirm that your Pumpkin server version matches your OPanel version. **Using an incompatible Pumpkin version may cause the server to panic and crash.**
+
+:::
+
 ## Install
 
 Move the downloaded jar file into the corresponding plugins / mods folder, and after starting the server, the installation is done.

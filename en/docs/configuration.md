@@ -9,6 +9,7 @@ The location of the configuration file varies depending on the server type. You 
 - Paper-series servers: `/plugins/OPanel/config.yml`
 - Forge-based servers: `/config/opanel-common.toml`
 - Fabric servers: `/config/opanel.json` **(Be sure to shut down the Fabric server before modifying the configuration)**
+- Pumpkin servers: `/opanel/config.json`
 
 ## Configuration Options
 

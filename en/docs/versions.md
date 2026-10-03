@@ -21,3 +21,9 @@ The minimum NeoForge version supported by OPanel is `21.1.217`.
 :::
 
 <!--@include: @/data/versions-list.md-->
+
+## Pumpkin Server Version Compatibility Table {#pumpkin-versions}
+
+Before using the Pumpkin version of OPanel, be sure to check the version compatibility table below to confirm that your Pumpkin server version matches your OPanel version. **Using an incompatible Pumpkin version may cause the server to panic and crash.**
+
+<!--@include: @/data/pumpkin-versions-list.md-->
