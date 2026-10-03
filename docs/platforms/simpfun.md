@@ -1,10 +1,10 @@
 # 在简幻欢中使用OPanel
 
 > [!info]
-> 依据[实例端口可用服务清单](https://www.yuque.com/simpfun/sfe/lbsm7hcl10oeg36h#M4kES)，您可以在遵守[简幻欢服务协议](https://www.yuque.com/simpfun/sfe/tos)下合理使用OPanel。
+> 依据[实例端口可用服务清单](https://yuque.com/simpfun/sfe/lbsm7hcl10oeg36h#M4kES)，您可以在遵守[简幻欢服务协议](https://yuque.com/simpfun/sfe/tos)下合理使用OPanel。
 
 > [!tip]
-> 近期经常有用户反馈无法在简幻欢面板服上打开OPanel面板，如果遇到类似问题，可在绑定QQ后加入[简幻欢QQ交流群](https://www.yuque.com/simpfox/simpdoc/joinqqgroup)寻求帮助，**不要**加入疑难解答群寻求帮助。
+> 近期经常有用户反馈无法在简幻欢面板服上打开OPanel面板，如果遇到类似问题，请优先通过[简幻欢QQ交流群](https://yuque.com/simpfox/simpdoc/joinqqgroup)寻求帮助。
 
 1. 进入简幻欢面板，在`控制台 > 实例 > 管理`页面中找到“实例端口”选项，点击“新建”。
 
