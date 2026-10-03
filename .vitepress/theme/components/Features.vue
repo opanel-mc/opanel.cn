@@ -12,11 +12,12 @@ import VPButton from "vitepress/dist/client/theme-default/components/VPButton.vu
         <img src="/static/assets/platforms/fabric.svg" class="logo logo-fabric" alt=""/>
         <img src="/static/assets/platforms/forge.svg" class="logo logo-forge" alt=""/>
         <img src="/static/assets/platforms/neoforged.png" class="logo logo-neoforge" alt=""/>
+        <img src="/static/assets/platforms/pumpkin.png" class="logo logo-pumpkin" alt=""/>
       </div>
       <div class="platform-content">
         <h2 class="platform-title">多平台支持</h2>
         <p class="platform-subtitle">
-          作为服务端插件 / 模组，OPanel支持多个主流服务端平台的多个Minecraft版本，包括Paper、Folia、Fabric、Forge和NeoForge。
+          作为服务端插件 / 模组，OPanel支持多个主流服务端平台的多个Minecraft版本，包括Paper、Folia、Fabric、Forge和NeoForge，甚至是Pumpkin。
         </p>
         <p>
           <a href="/docs/versions">

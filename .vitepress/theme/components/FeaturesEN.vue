@@ -12,11 +12,12 @@ import VPButton from "vitepress/dist/client/theme-default/components/VPButton.vu
         <img src="/static/assets/platforms/fabric.svg" class="logo logo-fabric" alt=""/>
         <img src="/static/assets/platforms/forge.svg" class="logo logo-forge" alt=""/>
         <img src="/static/assets/platforms/neoforged.png" class="logo logo-neoforge" alt=""/>
+        <img src="/static/assets/platforms/pumpkin.png" class="logo logo-pumpkin" alt=""/>
       </div>
       <div class="platform-content">
         <h2 class="platform-title">Multi-platform Support</h2>
         <p class="platform-subtitle">
-          As a server-side plugin / mod, OPanel supports multiple Minecraft versions on several mainstream server platforms, including Paper, Folia, Fabric, Forge and NeoForge.
+          As a server-side plugin / mod, OPanel supports multiple Minecraft versions on several mainstream server platforms, including Paper, Folia, Fabric, Forge and NeoForge, even Pumpkin.
         </p>
         <p>
           <a href="/en/docs/versions">

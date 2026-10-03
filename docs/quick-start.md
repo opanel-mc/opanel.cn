@@ -19,6 +19,12 @@ jar包名称中的“游戏版本”指的是该jar包所支持的**最低版本
 
 你可以在[平台与版本支持](/docs/versions)查看OPanel目前支持的服务端平台与游戏版本。
 
+:::warning Pumpkin版本兼容性
+
+在使用Pumpkin版本的OPanel之前，请务必先查阅[Pumpkin服务端版本对照表](/docs/versions#pumpkin-versions)，确认Pumpkin服务端版本与OPanel版本匹配。**使用不匹配的Pumpkin版本可能导致服务器panic崩溃。**
+
+:::
+
 ## 安装
 
 将下载好的jar包移入对应的插件 / 模组文件夹，启动服务器后即为安装成功。
