@@ -19,3 +19,9 @@ OPanel所支持的Fabric Loader版本最低为`0.16.14`（Minecraft版本`1.21.1
 :::
 
 <!--@include: @/data/versions-list.md-->
+
+## Pumpkin 服务端版本对照表 {#pumpkin-versions}
+
+在使用Pumpkin版本的OPanel之前，请务必先查阅下方的版本对照表，确认Pumpkin服务端版本与OPanel版本匹配。**使用不匹配的Pumpkin版本可能导致服务器panic崩溃。**
+
+<!--@include: @/data/pumpkin-versions-list.md-->
