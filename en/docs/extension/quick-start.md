@@ -5,7 +5,7 @@ This tutorial will help you get started with OPanel extension development and cr
 ## Prerequisites
 
 - Deploy OPanel `2.2.0-pre5` or later (see the [Quick Start](/en/docs/quick-start) guide)
-- Set up a Java development environment (JDK 14+) and install [IntelliJ IDEA](https://jetbrains.com/idea)
+- Set up a Java development environment (JDK 17+) and install [IntelliJ IDEA](https://jetbrains.com/idea)
 
 ### Optional: Develop with AI Agents
 
@@ -32,7 +32,7 @@ dependencies {
 
 java {
   toolchain {
-    languageVersion = JavaLanguageVersion.of(14)
+    languageVersion = JavaLanguageVersion.of(17)
   }
 }
 ```
@@ -42,7 +42,7 @@ If you need to register backend endpoints later, you must also add Javalin as a 
 ```kts
 dependencies {
   // ...
-  compileOnly 'io.javalin:javalin:5.6.4'
+  compileOnly 'io.javalin:javalin:7.2.3'
 }
 ```
 
