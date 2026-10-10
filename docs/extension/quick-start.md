@@ -5,7 +5,7 @@
 ## 准备工作
 
 - 部署 OPanel，版本为`2.2.0-pre5`及以上（参见[快速开始](/docs/quick-start.md)文档）
-- 准备 Java 环境（JDK 14+），安装 [Intellij IDEA](https://jetbrains.com/idea)
+- 准备 Java 环境（JDK 17+），安装 [Intellij IDEA](https://jetbrains.com/idea)
 
 ### 可选：使用AI Agent开发扩展
 
@@ -32,7 +32,7 @@ dependencies {
 
 java {
   toolchain {
-    languageVersion = JavaLanguageVersion.of(14)
+    languageVersion = JavaLanguageVersion.of(17)
   }
 }
 ```
@@ -42,7 +42,7 @@ java {
 ```kts
 dependencies {
   // ...
-  compileOnly 'io.javalin:javalin:5.6.4'
+  compileOnly 'io.javalin:javalin:7.2.3'
 }
 ```
 

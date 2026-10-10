@@ -4,12 +4,12 @@ The OPanel API provides a method for registering backend endpoints, allowing ext
 
 ## Add the Dependency
 
-Before adding a backend endpoint, make sure Javalin 5.6.4 has been added as a dependency in `build.gradle`:
+Before adding a backend endpoint, make sure Javalin 7.2.3 has been added as a dependency in `build.gradle`:
 
 ```kts
 dependencies {
   // ...
-  compileOnly 'io.javalin:javalin:5.6.4'
+  compileOnly 'io.javalin:javalin:7.2.3'
 }
 ```
 
@@ -36,4 +36,4 @@ public class Main {
 
 Build the extension, deploy it to the server, and log in to the OPanel dashboard. Then open `http://localhost:3000/api/extension/<extension ID>/test` to receive a `Hello World` response.
 
-For details on writing backend endpoints, see the [Javalin v5.6.x docs](https://javalin.io/archive/docs/v5.6.X.html).
+For details on writing backend endpoints, see the [Javalin docs](https://javalin.io/documentation).
