@@ -49,18 +49,18 @@ You can check the Java versions used by different Minecraft versions on the [Min
 
 After completing the settings, click `Create (C)` to create the module.
 
-3. After creating the module, you need to add the new module's name to the `platformModules` list of the corresponding server in the `settings.gradle` file at the root directory. To keep the file format tidy, please place the new module in the corresponding position according to the server and game version of the module.
+3. After creating the module, add it to the object for the corresponding server platform in the root `platform-modules.json`. The key is the module name, and the value is a list of shared modules it depends on. For example, add the following entry to the `fabric` object, keeping the existing entries:
 
-```groovy
-def platformModules = [
-    fabric: [
-        // ...
-        'fabric-1.20.4',
-        // ...
-    ],
-    // ...
+```json
+"fabric-1.20.4": [
+  "fabric-config",
+  "fabric-helper"
 ]
 ```
+
+Place the new entry in game version order, and remember to separate entries with commas. Both Paper and Folia modules are registered in the `paper` object.
+
+`settings.gradle` reads this file to load modules, and CI uses it to generate the build matrix. The shared module list must match the project dependencies declared in the `build.gradle` files of the new module and its shared modules. `core` and `api` are loaded automatically and do not need to be listed.
 
 ## Copy Files
 
@@ -90,7 +90,11 @@ minecraft_version=1.20.4
 yarn_mappings=1.20.4+build.3
 fabric_loader_version=0.16.14
 fabric_api_version=0.97.3
+
+frontend_env_vite_opanel_target=fabric-1.20.4
 ```
+
+`frontend_env_vite_opanel_target` must match the new module's name. During the build, Gradle converts it to the frontend environment variable `VITE_OPANEL_TARGET` to generate the frontend pages for that module. After copying an existing module, remember to update both this property and `baseName`.
 
 :::info
 
@@ -136,7 +140,15 @@ Modify the code in the new module to adapt it to this version. The implementatio
 
 ### Build Code
 
-Modify the code according to the above steps until the IDE no longer shows any error prompts, then you can try to build the code. Click on the Gradle section in the right sidebar, find the build task for the corresponding module, and double-click to run it.
+Once you have modified the code using the steps above and the IDE reports no errors, you can try building it. First, install the frontend dependencies as described in the [Contributing Guidelines](./contributing#install-dependencies). The module build automatically prepares Minecraft assets and Wasm, then builds and packages the module's frontend pages.
+
+Run the following command in the project root to load and build only the new module and its required dependencies:
+
+```cmd
+.\gradlew -PbuildTarget=fabric-1.20.4 :fabric-1.20.4:build
+```
+
+You can also open the Gradle section in the right sidebar, find the build task for the corresponding module, and double-click to run it.
 
 ![adaptation-10](/static/docs/adaptation-10.png)
 
@@ -144,7 +156,7 @@ Since the server may have been modified across different game versions, it may c
 
 ### Test
 
-If the code is built successfully, the jar file for the version you adapted will be generated in the `/build/libs` folder. Then, you can follow the steps in the [Contributing Guidelines](./contributing#server-side-functionality-backend-api) to test OPanel.
+If the code builds successfully, the jar file for the version you adapted will be generated in the `build/libs` folder at the project root. In this example, the filename is `opanel-fabric-1.20.4-build-<OPanel version>.jar`. Then, you can follow the steps in the [Contributing Guidelines](./contributing#server-side-functionality-backend-api) to test OPanel.
 
 :::warning Note
 

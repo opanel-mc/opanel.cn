@@ -50,18 +50,18 @@ Paper和Folia模块都应放在`paper`文件夹下。
 
 设置完成后，点击`创建(C)`即可创建模块。
 
-3. 创建模块后，需要在根目录的`settings.gradle`中将新模块名称添加到对应服务端的`platformModules`列表中。请按照模块的服务端和游戏版本将新模块放到对应的位置，以保持文件格式整洁。
+3. 创建模块后，需要在根目录的`platform-modules.json`中，将新模块添加到对应服务端的对象中。键为模块名称，值为该模块依赖的共用模块列表。例如，在`fabric`对象中添加以下条目，并保留已有条目：
 
-```groovy
-def platformModules = [
-    fabric: [
-        // ...
-        'fabric-1.20.4',
-        // ...
-    ],
-    // ...
+```json
+"fabric-1.20.4": [
+  "fabric-config",
+  "fabric-helper"
 ]
 ```
+
+请按照游戏版本将新条目放到对应的位置，并注意条目之间的逗号。Paper和Folia模块都注册在`paper`对象中。
+
+`settings.gradle`会读取此文件来加载模块，CI也会使用它生成构建矩阵。共用模块列表应与新模块及其共用模块的`build.gradle`中的项目依赖保持一致；`core`和`api`会自动加载，无需写入列表。
 
 ## 复制文件
 
@@ -91,7 +91,11 @@ minecraft_version=1.20.4
 yarn_mappings=1.20.4+build.3
 fabric_loader_version=0.16.14
 fabric_api_version=0.97.3
+
+frontend_env_vite_opanel_target=fabric-1.20.4
 ```
+
+`frontend_env_vite_opanel_target`必须与新模块名称一致。构建时，Gradle会将其转换为前端环境变量`VITE_OPANEL_TARGET`，为该模块生成对应的前端页面。复制已有模块后，记得同时修改此项和`baseName`。
 
 :::info
 
@@ -137,7 +141,15 @@ Gradle同步耗时较长，期间可以做一点别的事情。
 
 ### 构建代码
 
-通过上述步骤将代码修改直至IDE没有提示报错，即可尝试构建代码。点击右侧边栏的Gradle一栏，找到对应模块的build任务，双击运行即可。
+通过上述步骤将代码修改直至IDE没有提示报错，即可尝试构建代码。请先按照[贡献指南](./contributing#安装依赖)安装前端依赖；模块构建会自动准备Minecraft资源和Wasm，并构建、打包该模块的前端页面。
+
+在项目根目录下执行以下命令，只加载并构建新模块及其所需依赖：
+
+```cmd
+.\gradlew -PbuildTarget=fabric-1.20.4 :fabric-1.20.4:build
+```
+
+也可以点击右侧边栏的Gradle一栏，找到对应模块的build任务，双击运行即可。
 
 ![adaptation-10](/static/docs/adaptation-10.png)
 
@@ -145,7 +157,7 @@ Gradle同步耗时较长，期间可以做一点别的事情。
 
 ### 测试
 
-如果代码构建成功，那么你所适配的版本的jar包将会被生成在`/build/libs`文件夹下。接着，你就可以按照[贡献指南](./contributing#%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%8A%9F%E8%83%BD-%E5%90%8E%E7%AB%AFapi)中的步骤对OPanel进行测试。
+如果代码构建成功，那么你所适配的版本的jar包将会被生成在项目根目录的`build/libs`文件夹下，本例中的文件名为`opanel-fabric-1.20.4-build-<OPanel版本>.jar`。接着，你就可以按照[贡献指南](./contributing#%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%8A%9F%E8%83%BD-%E5%90%8E%E7%AB%AFapi)中的步骤对OPanel进行测试。
 
 :::warning 注意
 
