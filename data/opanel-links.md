@@ -1,4 +1,5 @@
 - Github: <https://github.com/opanel-mc/opanel>
+- Modrinth: <https://modrinth.com/plugin/opanel>
 - Curseforge: <https://curseforge.com/minecraft/bukkit-plugins/opanel>
 - SpigotMC: <https://spigotmc.org/resources/opanel.133219>
 - MCMod: <https://mcmod.cn/class/25408.html>
