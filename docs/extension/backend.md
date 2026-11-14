@@ -4,12 +4,12 @@ OPanel API为扩展插件提供了注册后端接口的方法，允许扩展向�
 
 ## 添加依赖
 
-在新增后端接口前，你需要确保已经在`build.gradle`中将Javalin 7.2.3添加为依赖：
+在新增后端接口前，你需要确保已经在`build.gradle`中将Javalin 7.2.4添加为依赖：
 
 ```kts
 dependencies {
   // ...
-  compileOnly 'io.javalin:javalin:7.2.3'
+  compileOnly 'io.javalin:javalin:7.2.4'
 }
 ```
 

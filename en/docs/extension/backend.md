@@ -4,12 +4,12 @@ The OPanel API provides a method for registering backend endpoints, allowing ext
 
 ## Add the Dependency
 
-Before adding a backend endpoint, make sure Javalin 7.2.3 has been added as a dependency in `build.gradle`:
+Before adding a backend endpoint, make sure Javalin 7.2.4 has been added as a dependency in `build.gradle`:
 
 ```kts
 dependencies {
   // ...
-  compileOnly 'io.javalin:javalin:7.2.3'
+  compileOnly 'io.javalin:javalin:7.2.4'
 }
 ```
 

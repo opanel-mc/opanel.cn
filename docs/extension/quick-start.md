@@ -42,7 +42,7 @@ java {
 ```kts
 dependencies {
   // ...
-  compileOnly 'io.javalin:javalin:7.2.3'
+  compileOnly 'io.javalin:javalin:7.2.4'
 }
 ```
 

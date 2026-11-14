@@ -42,7 +42,7 @@ If you need to register backend endpoints later, you must also add Javalin as a 
 ```kts
 dependencies {
   // ...
-  compileOnly 'io.javalin:javalin:7.2.3'
+  compileOnly 'io.javalin:javalin:7.2.4'
 }
 ```
 
